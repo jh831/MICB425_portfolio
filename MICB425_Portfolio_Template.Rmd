@@ -1,18 +1,14 @@
 ---
 title: "MICB425 Portfolio - Microbial Ecological Genomics: From Genomes to Biomes, Spring 2018"
-author: "Student First Name, Preferred Name, Last Name, Student ID"
+author: "Jun Hui, Jenny, He, 25889149"
 date: "version `r format(Sys.time(), '%B %d, %Y')`"
 output: 
   html_document:
     toc: true
 ---
 # Module 01
-Reserve the first level headings (#) for the start of a new Module. This will help to organize your portfolio in an intuitive fashion.  
-**Note: Please edit this template to your heart's content. This is meant to be the armature upon which you build your individual portfolio. You do not need to keep this instructive text in your final portfolio, although you do need to keep module and assignment names so we can identify what is what.**
-
 
 ## Module 01 portfolio check
-The first of your second level headers (##) is to be used for the portfolio content checks. The Module 01 portfolio check has been built for you directly into this template, but will also be available as a stand-alone markdown document available on the MICB425 GitHub so that you know what is required in each module section in your portfolio. The completion status and comments will be filled in by the instructors during portfolio checks when your current portfolios are pulled from GitHub.
 
 * Installation check
     + Completion status:
@@ -46,32 +42,43 @@ The first of your second level headers (##) is to be used for the portfolio cont
     + Comments  
     
 ## Data science Friday  
-The remaining second level headers (##) are for separating data science Friday, regular course, and project content. In this module, you will only need to include data science Friday and regular course content; projects will come later in the course.
 
 ### Installation check
-Third level headers (###) should be used for links to assignments, evidence worksheets, problem sets, and readings, as seen here.  
-
 Use this space to include your installation screenshots.
+
+![MacTerminal](MacTerminal.png)
+
+![GitHub](Fig4.GitHub.png)
+
+
+![RStudio](Fig3.RStudio.png)
 
 
 
 ### Portfolio repo setup
 Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
 
+cd documents
+
+cd MICB425_portfolio
+
+git add .
+
+git commit -m "Attach Message"
+
+git status
+
+git push 
 
 
 ### RMarkdown pretty html challenge
-Paste your code from the in-class activity of recreating the example html.
+Please see Pretty_html.Rmd or Pretty_html.html in the MICB425 portfolio 
 
-
+### ggplot Tutorial
+Please see Working_Data.Rmd or Working_Data.html in the MICB425 portfolio
 
 ## Origins and Earth Systems
 ### Evidence worksheet 01 
-The template for the first Evidence Worksheet has been included here. The first thing for any assignment should link(s) to any relevant literature (which should be included as full citations in a module references section below).
-
-You can copy-paste in the answers you recorded when working through the evidence worksheet into this portfolio template. 
-
-As you include Evidence worksheets and Problem sets in the future, ensure that you delineate Questions/Learning Objectives/etc. by using headers that are 4th level and greater. This will still create header markings when you render (knit) the document, but will exclude these levels from the Table of Contents. That's a good thing. You don't' want to clutter the Table of Contents too much.
 
 [Whitman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
 
@@ -81,14 +88,58 @@ Describe the numerical abundance of microbial life in relation to ecology and bi
 #### General questions
 * What were the main questions being asked?  
 
+Where are the main prokaryote habitats located and what is the estimated abundance of prokaryotes in the different reservoires? 
+
+What is the total nutrient and carbon content present in prokaryotes and how do they affect the carbon cycle? 
+
 * What were the primary methodological approaches used?  
+
+The primary methodological approaches used were mainly based on extrapolations of pooled sampling data. The number of prokayotes was estimated using average cellular density multipled by the estimated volume of the respective reservoires (i.e. water quantities, soil amounts, and terrestrial subsurface volumes). The amount of cellular carbon content present in prokaryotes was estimated based on the assumption that the cellular carbon is one-half of the dry weight. 
+
+Aquatic environemnt:  
+average cellular density which helped to extrapolate the number of prokaryotes 
+
+Soil:   
+- estimated from unpublished studies  
+- cellular density + estimated amount of soil on Earth 
+
+Subsurface:  
+- assuming average porosity of terrestial subsurface is 3%  
+- total prokaryote number was calculated using the average volume of subsurface prokaryote cell and volume of of terrestrial subsurface 
+
+Carbon content:  
+- assuming that the cellular carbon is one-half of the dry weight  
+- used the dry weight of prokaryote to estimate the amount of cellular carbon present in prokaryotes  
 
 * Summarize the main results or findings.  
 
+The main prokaryotic reservoires are the oceans, soils, and terrestrial subsurfaces. The largest turnover rate of prokaryotes is in the oceans. The total amount of prokaryotic carbon is about 60% to 100%. Prokaryotes contribute the largest amount of phosphorous and nitrogen. The large population of prokaryotes imply that there is a greater chance of mutation, therefore contributing to overall genetic diversity.  
+
+According to Table 5:  
+Summary of the number prokayotes in the world is:  
+Aquatic habitats: 12x10^28  
+Oceanic subsurface: 355x10^28  
+Soil: 26x10^28  
+Terrestrial subsurface: 25-250x10^28  
+Total: 415-640x10^28
+
+Summary of the amount (Pg) of carbon content in prokaryotes is:  
+Aquatic habitats: 2.2  
+Oceanic subsurface: 303  
+Soil: 26  
+Terrestrial subsurface: 22-215  
+Total: 353-546  
+
 * Do new questions arise from the results?  
+
+What is the significance of the estimated prokaytoic abundance in the different reservoires in relation to their metabolic potential to thrive in those enviroments? 
+
+How can the calculations be used to estimate future events? 
+
 
 * Were there any specific challenges or advantages in understanding the paper (*e.g.* did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
 
+The authors assumed the experimental approaches used were robust and the data presented were largely obtained by extrapolation, therefore, the values may not have been assessed appropriately. Though the results were impactful, the references provided were not scrutinized and so it raises concerns regardig the reliability of the calculations.  
 
 
 ### Problem set 01
@@ -98,31 +149,219 @@ Describe the numerical abundance of microbial life in relation to the ecology an
 #### Specific questions:
 * What are the primary prokaryotic habitats on Earth and how do they vary with respect to their capacity to support life? Provide a breakdown of total cell abundance for each primary habitat from the tables provided in the text.  
 
+The primary prokaryotic habits are:  
+aquatic habitat/open ocean: 1.2x10^29  
+soil: 2.6x10^29  
+oceanic and terrestrial subsurfaces: 3.8x10^30  
+
+Due to the different nutrient availability and carbon content at the different habitats, the capacity to support life will vary. For example, with a higher amount of nutrent and carbon content, the number of cells will increase. 
+
 * What is the estimated prokaryotic cell abundance in the upper 200 m of the ocean and what fraction of this biomass is represented by marine cyanobacterium including Prochlorococcus? What is the significance of this ratio with respect to carbon cycling in the ocean and the atmospheric composition of the Earth?  
+
+The estimated prokaryotic cell abundance in the upper 200 m of the ocean is: 5x10^5 cells/mL.
+
+Cellular density for Prochlorococcus is: 4x10^4 cells/mL
+
+Fraction of biomass represented by marine cyanobacterium Prochlorococcus: (4x10^4 cells/mL)/(5x10^5 cells/mL) = 0.08 = 8%
+
+Prochloroccous is a primary carbon carrier
+Given only 8% of cells are supporting trophic level, it implies that there must a high turnover rate to able to support the large biomass. 
 
 * What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?  
 
+Autotroph: uses inorganic carbon as a source of carbon (ie. CO2)  
+Heterotroph: uses organic carbon as a source of carbon (must be incorporated into their own cells)  
+Lithotroph: uses inorganic chemical as a source of electrons
+
 * Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?  
+
+The deep ocean sediments, which are 7km below the sea level. The primary limiting factor would be temperature because the average temperature at this depth is about 125C, which nearly exceeds the upper limit for prokaryotic life. 
+
+limiting factor: temperature - ~125C, ∆C ~22C/km 
+
+Marianna's Trench (lowest) ~10.9km (+/-4.5km)
+Mount Everst (highest)
+
+deepest subsurface is 9-10km from sea level 
+
+
+The deepest habitat capable of supporting prokaryotic life is Marianna's Trench located 10.9km, with an additional 4.5km below, therefore giving 14.9km below sea level.The primary limiting factor at this depth is temperature because the average temperature at this depth is about 125C, which nearly exceeds the upper limit for prokaryotic life. 
 
 * Based on information provided in the text your knowledge of geography what is the highest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this height?  
 
+The highest habitat capable of supporting prokaryotic life is mount everst, which is 8.8km above sea level. The primary limiting factor at this height would be nutrient availability and temperature. 
+
+
 * Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth’s biosphere measured in km?  
+
+8.8 (mt everest) + 10.9km (marianas trench) + 4km =~24km 
+
+Assuming Mount Everest is the upmost boundary, and 4.9km below subsurface is the lower boundary: 24km (from highest to lowest)
+
 
 * How was annual cellular production of prokaryotes described in Table 7 column four determined? (Provide an example of the calculation)  
 
+annual cellular production (cells/yr) = [(population size)/(turnover days)]*365
+
+[(3.6x10^28)/(16)]*365 = 8.2x10^29 cells/year
+
+viruses modulate abundance of cell populations
+- also carry accessory metabolic genes (protein encoding genes that play a role in cellular metabolism) --> reprogram
+- network of cells is almost like a circuit board -> genes can be reprogrammed by viruses
+
 * What is the relationship between carbon content, carbon assimilation efficiency and turnover rates in the upper 200m of the ocean? Why does this vary with depth in the ocean and between terrestrial and marine habitats?  
+
+assuming carbon efficiency = 20% [assumption made by authors]
+assuming 5-20 femtogram (average 10fg) of C/prokaryotic cell
+10fg = ~20x10^-30pg/cell
+
+total number of cells=3.6x10^28 cells
+
+(3.6x10^28) * (20x10^-30pg/cell) = 0.72 Pg in marine heterotrophs 
+
+use a multiplier of 4 in the paper --> 4*0.72= 2.88Pg/year (turnover rate of C)
+
+51Pg C/year, 85% is consumed in photic water --> 51*0.85= ~43Pg C consumed
+(43Pg/year) / (2.88Pg/year) = 14.9 or 1 turnover every 24.5 days
+
 
 * How were the frequency numbers for four simultaneous mutations in shared genes determined for marine heterotrophs and marine autotrophs given an average mutation rate of 4 x 10^-7^ per DNA replication? (Provide an example of the calculation with units. Hint: cell and generation cancel out)  
 
+4x10^-7 mutations/generation
+(4x10^-7)^4 = 2.56x10^-26 mutations/generation 
+[4 simultaneous mutations in every gene, hence to the poewr of 4]
+
+3.6x10^28 cells
+(365 days)/(16 days-generation time) = 22.8 turnovers/year
+
+(3.6x10^28 cells) x 22.8 = 8.2x10^29 cells/year in ocean 
+
+(8.2x10^29 cells/year)*(2.56x10^-26 mutations/generation) 
+= 2.1x10^4 mutations/year
+= 0.4 hours/mutation (in paper)
+
+though rare to have 4 mutations simultaneously, this shows that this is still occuring frequently (point mutations) --> whole other mobile aspect to microbial genome that is drastically more rapid than the mutation we calculated --> large population sizes = anything is possible.
+
+
 * Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?  
+
+The large population size and high mutation rate of prokaryotic cells imply there is an enormous potential to acquire genetic diversity. 
+
 
 * What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text? 
 
 
+### Evidence worksheet 02
+#### Learning objectives: 
+Comment on the emergence of microbial life and the evolution of Earth systems. 
+
+####Specific Questions:
+
+* Indicate the key events in the evolution of Earth systems at tic marks on the time series.
+
+* Describe the dominant physical and chemical characteristics of Earth systems at waypoints.
+
+**4.6 Ga** - Solar system was created: super nova resulted in planetismals  
+           - Planets received water vapour and carbon  
+**4.5 Ga** - Proto-Earth struck: formation of the moon  
+           - Earth's spin and tilt, day and night cycles, and seasons were created  
+**4.4 Ga** - Oldest mineral,Zircons, were discovered in Western Australia  
+**4.1 Ga** - First evidence of life in carbon isotopes in Zircon, stored in graphite  
+**4.0 Ga** - Acasta gneiss, silica rich rocks, were discovered in Western Canada  
+           - Evidence for subduction activity  
+**3.8 Ga** - Meteorite impacts contributed to ocean chemistry  
+           - Sedimentary rocks, weathering, oceans heated, phosphorus   
+           - Emergence of life from evidence of rocks in the Isua Belt containing the oldest water-lain sediment  
+           - Meteorite bombardment halted  
+**3.5 Ga** - Rubisco in carbon fractionation contributed to the global oxygenic   photosynthesis, which increased the productivity of chemotrophic life  
+           - Evolution of cyanobacteria was evident  
+**3.2 Ga** - Microfossils in volcanogenic massive sulphide deposits implied that life existed in mid-ocean ridges,therefore beginning to see a widespread of microbial life  
+           - Carbonaceous microstructures  
+**3.0 Ga** - First global glaciation induced by methanogens  
+**2.3 Ga** - Initial rise of atmospheric oxygen by cyanobacteria  
+**2.0 Ga** - First Homo Sapien appeared  
+**1.8 Ga** - Emergence of Eukaryotes  
+**1.0 Ga** - Snowfall and glaciation triggered by a series of changes in surface chemistry  
+**0.5 Ma** - Cambran explosion  
+           - Emergence of animals and explosion of cellular life  
+**0.4 Ma** - Land plants  
+
+### Problem set 02
+#### Learning objectives: 
+Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles
+
+#### Specific questions:
+* What are the primary geophysical and biogeochemical processes that create and sustain conditions for life on Earth? How do abiotic versus biotic processes vary with respect to matter and energy transformation and how are they interconnected?
+
+The primary geophysical processes and biogeochemical processes include:  
+-tectonics and atmospheric photochemical processes  
+-geothermal processes, diagenesis, tectoics, erosion mountain building 
+
+Abiotic processes are mainly comprised acid-base chemistry, whereas biotic processes are mainly comprised of redox reactions. Both abiotic and biotic processes are interconnected in ways such that together they set the lower limits on external E required to sustain the cycles. 
+
+* Why is Earth's redox state considered an emergent property?
+
+The Earth's current redox state is reflective of the outcomes of the integrated microbial network interactions. Microbes play a role in catalyzing the thermodynamically constrained reactions present within biolgoical fluxes of major elements via coupled half-cells. Through this, a system of linked element cycling has been created. Geological processes such as tectonics also contribute to the replenishment of elements in the biological fluxes, together, these biogeochemical processes alter the Earth's redox state. The notion of Earth's redox state being considered an emergent property implies that microbial units collectively come together to form an interconnected network of metabolic pathways that help create feedbacks links between metabolic and geochemical processes.
+
+
+* How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?  
+
+-via cycles of coupled oxidation and reduction reactions  
+-thermodynamics depends on which side of reaction is favoured  
+-products of one nutrient cycle can be funneled to use as the substrates for another nutrient cycle or create a new one
+
+Strategies: using enzymes to catalyze reaction i.e. nitrogenase
+
+
+* Using information provided in the text, describe how the nitrogen cycle partitions between different redox "niches" and microbial groups Is there a relationship between the nitrogen cycle and climate change?
+
++O2: ammonia is oxidized to nitrate  
+-O2: nitrite and ntrate are used as electron acceptors to oxidize organic matter and to make nitrogen gas  
+-metabolic transformations occur based on thermodynamics  
+
+* What is the relationship between microbial diversity and metabolic diversity and how does this relate to the recovery of new protein families from microbial community genomes?
+
+metabolic diversity: metabolic pathways using available substrates produced as end products of other types of microbial metabolism  
+
+microbial diversity: horizontal gene transfer  
+
+increase in microbial diversity = increase in new genomes sequenced = increase in the number of new protein families  
+
+
+* On what basis do the authors consider microbes the guardians of metabolism? 
+
+Despite the different environmental conditions, microbes have acquired new genetic material through horizontal gene transfer which ultimately allowed them to withstand strong environmental perturbations. In midst of their microbial evolution, core genes coding for redox reactions that contribute to biogeocheical cycles are conserved.  In a sense, new environmental conditions select what microbes survive, but eseential  metabolic pathways are still protected and passed on overtime through the means of boutique genes. 
+
+-evolution of boutqiue genes that protect the metabolic pathway 
+
+###Prompt 1
+“Microbial life can easily live without us; we, however, cannot survive without the global catalysis and environmental transformation it provides” (1). From the creation of the solar system to the emergence of homo sapiens, microbes have served important roles in shaping the direction of evolution. As the pioneers of early Earth, microbes have altered biogeochemical transformations and created habitable environmental conditions for humans to live in. Throughout the 4.6 billion years of evolutionary changes, microbes have displayed enormous adaptive potentials and strong resilience as reflected in their ability to survive different harsh conditions. To date, given the sheer abundance of microbes, it simply make them irreplaceable. Microbes collectively are an important entity for maintaining human survival. They are the key players in paving the path for human life. The interconnected microbial networks are essential in restoring balances between the different nutrient cycles. Waste management and environmental efforts are also dependent on the contribution by microbes. Also, despite an increase in technological advances, ties to microbial transformations can still not be entirely delineated.  
+
+Microbes play an essential role in paving the path for human life. They were the pioneers in providing Earth with habitable conditions. Oxygen, for instance, is a key molecules that is necessary for human survival. Approximately 2.3 billion years ago, cyanobacteria were responsible for introducing oxygen into the atmosphere (4). Till present day, presence of all oxygen we breathe is largely attributed to the works of microbes (4). As such, microbial contribution to the overall global atmospheric evolution is another reason for their primitive role in setting up conditions favourable to support life. For example, Kasting states that the microbial population is responsible for the atmospheric evolution of inhabited planets (4). In the event of another global atmospheric change, microbial contribution cannot be excluded (4).  Especially in the consideration of potential habitation on Mars, microbes will certainly be necessary. If there continues to be an increase of habitat loss and overexploitation, it is plausible that Earth would be subjected into a “sixth mass extinction event” (5).  Another reason is microbes are required for the conservation of essential biogeochemical pathways. They are extremely robust and resilient, and relies on horizontal gene transfer that ultimately allows accessory genes to survive to conserve important metabolic pathways (6).  
+ 
+Microbial catalysis and functions are crucial for maintaining equilibrium between the different elemental cycles. For example, an active biosphere relies on nitrogen fixation to integrate nitrogen into biological molecules (2). On an industrial scale, the Haber Bosch process fulfills this need as it has been widely used to mass produce ammonia using nitrogen and hydrogen (2) . Despite it being one of the main anthropogenic inputs of fixed nitrogen, in the absence of any microbial catalysis the atmospheric reserves of nitrogen and hydrogen would presumably be depleted overtime. Consequently, nitrogen would be sequestered in deep sediments which would otherwise necessitate difficult deep sea engineering. On an environmental scale, plants would deplete fixed nitrogen and photosynthesis would eventually stop proceeding (3). However, the nitrogen cycle is restored by microbes for they permit the process of denitrification and anammox to occur, thereby closing the loop by returning nitrogen gas into atmosphere (2). The restoration of balance is also necessary for the continuation of biogeochemical cycles.  
+
+Environmental and waste management efforts would be rendered futile in the absence of microbial catalysis. With respect to nutrient and biomass cycling, microbes are important in ensuring a continuous cycling of nutrients to prevent their exhaustion. In addition, they are on guard for renewing biomass to avoid the accumulation of biomass and addition to the existing amount of biogeochemical waste (3). For example, phosphorus is a type of non-renewable biomass. The lack of regeneration of phosphorous can negatively affect ocean productivity and perturb the balance maintained between human inputs (3). Due to the sedimentation of phosphorous, it is extremely difficult to release the sequestered phosphorus in an environmentally sustainable way, and therefore once again necessitating the activity of microbes (3). Environmental efforts are underway to combat the increasing levels of carbon dioxide and methane, both of which are greenhouse gases. The fact that “levels of carbon dioxide have grown at an extraordinarily rapid rate” and with methanes showing “similar rapid burst” are reflected by increased fossil fuel production and animal respiration (7). As an effort to remedy the effects of climate change, methods such as genetically modified organisms and geoengineering are being introduced (8).  
+
+With an increase in technological advancements, the prospects of replacing the work of microbes is still underway. The act of symbiosis, for example, is a prime example for showing why it is difficult to completely delineate associations from microbes. Symbiosis relationships may include but not limited to nutrient acquisition and or production.  Since humans are composed of microbes, it is a rather contradictory thought to put forth about surviving without microbes when it is not possible for humans separate from their own entities. Also, the feasibility regarding to the time scale and resilience of technology are also factors that need to be taken into consideration. With reference to the evolutionary development of microbial metabolism, the ability for technology to replicate the same machineries following the same time scale remains uncertain. This thought is especially challenged by complications in technological systems as they are “vulnerable to rare but consequential failures” (8). In additional, knowledge regarding the details of how individual processes interact in complex biogeochemical cycles are not well understood (1). Based on this, it seems naive to consider replacing these cycles that produce massive amounts of nutrients with “machines” that are still open for further understanding.  
+
+In conclusion, microbes adapt to environments that favour them and create habitable conditions to support life forms. Many of the different elemental cycles are maintained at equilibrium due to the interconnected microbial network interactions. Efforts in environmental and waste management are also dependent on microbes to help in nutrient and biomass renewal. Despite an increase in the use of technology to replace microbial functions, doubts still arise with regards to the feasibility in time and resilience. Many of the biogeochemical processes require further study to understand individual processes involved, therefore there is still a long way to replace microbial functions with technology confidently.  
+
+
+References  
+1. Paul G. Falkowski, Tom Fenchel, Edward F. Delong. 2008. The Microbial Engines That Drive Earth's Biogeochemical Cycles. Science. 320:1034-1039. doi: 10.1126/science.1153213.  
+2. Donald E. Canfield, Alexander N. Glazer, Paul G. Falkowski. 2010. The Evolution and Future of Earth’s Nitrogen Cycle. Science. 330:192. doi: 10.1126/science.1186120.  
+3. Gilbert JA, Neufeld JD. 2014. Life in a World without Microbes. PLOS Biology 12(12): e1002020.  
+4. James F. Kasting, Janet L. Siefert. Life and the Evolution of Earth's Atmosphere. 7:.  
+5. Colin N Waters, Jan Zalasiewicz, Colin Summerhayes, Anthony D Barnosky, Clément Poirier, Agnieszka Galuszka, Alejandro Cearreta, Matt Edgeworth, Erle C Ellis, Michael Ellis, Catherine Jeandel, Reinhold Leinfelder, J R McNeill, Daniel deB Richter. 2016. The Anthropocene is functionally and stratigraphically distinct from the Holocene. Science. 351:aad2622. doi: 10.1126/science.aad2622.  
+6. Nisbet, EG. 2001. The habitat and nature of early life. Nature. 409:1083-1091. doi: 10.1038/35059210.  
+7. Mooney, C. 2016. Scientists say humans have now brought on an entirely new geologic epoch. The Washington Post. .  
+8. Joel Achenbach, Published: January, 2. Spaceship Earth: A new view of environmentalism. .  
 
 ### Module 01 references
-Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
-
-An example for Whitman and Wiebe (1998) has been included below.
 
 Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578–6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
+James F. Kasting, Janet L. Siefert. Life and the Evolution of Earth's Atmosphere.
+
+Sleep, NH, Nisbet, EG. 2001. The habitat and nature of early life. Nature. 409:1083-1091. doi: 10.1038/35059210. http://www.ncbi.nlm.nih.gov/pubmed/11234022.
