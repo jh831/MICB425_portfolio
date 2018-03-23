@@ -51,32 +51,32 @@ metadata %>%
 ##Exercise 3
 physeq
 
-plot_bar(physeq, fill="Phylum")
+plot_bar(physeq, fill="Genus")
 
 physeq_percent = transform_sample_counts(physeq, function(x) 100 * x/sum(x))
 
-plot_bar(physeq_percent, fill="Phylum")
+plot_bar(physeq_percent, fill="Genus")
 
-plot_bar(physeq_percent, fill="Phylum") + 
-  geom_bar(aes(fill=Phylum), stat="identity")
+plot_bar(physeq_percent, fill="Genus") + 
+  geom_bar(aes(fill=Genus), stat="identity")
 
 ##Create a bar plot at a different taxonmic level with more descriptive labels          
-p <- plot_bar(physeq_percent, fill="Phylum") + 
-      geom_bar(aes(fill=Phylum), stat="identity")
+p <- plot_bar(physeq_percent, fill="Genus") + 
+      geom_bar(aes(fill=Genus), stat="identity")
 
 p + labs(x = "Sample depth", y = "Percent relative abundance", 
-      title = "Phyla from 10 to 200 m in Saanich Inlet" )
+      title = "Genus from 10 to 200 m in Saanich Inlet" )
 
-##Exercise 4
-plot_bar(physeq_percent, fill="Phylum") +
-  geom_bar(aes(fill=Phylum), stat="identity") +
-  facet_wrap(~Phylum)
+plot_bar(physeq_percent, fill="Genus") +
+  geom_bar(aes(fill=Genus), stat="identity") +
+  facet_wrap(~Genus)
 
-plot_bar(physeq_percent, fill="Phylum") +
-  geom_bar(aes(fill=Phylum), stat="identity") +
-  facet_wrap(~Phylum, scales="free_y") +
+plot_bar(physeq_percent, fill="Genus") +
+  geom_bar(aes(fill=Genus), stat="identity") +
+  facet_wrap(~Genus, scales="free_y") +
   theme(legend.position="none")
 
+##Exercise 4
 ##Using ggplot, create a faceted figure showing nutrient concentrations 
 ##in uM for O2, PO4, SiO2, NO3, NH4, and NO2 by depth
 library(dplyr)

@@ -139,6 +139,8 @@ The authors assumed the experimental approaches used were robust and the data pr
 
 
 ### Problem set 01
+[Whiteman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
 #### Learning objectives: 
 Describe the numerical abundance of microbial life in relation to the ecology and biogeochemistry of Earth systems.
 
@@ -248,8 +250,7 @@ The large population size and high mutation rate of prokaryotic cells imply ther
 
 
 ### Evidence worksheet 02
-
-[]
+[Nisbet and Sleep 2001](http://www.ncbi.nlm.nih.gov/pubmed/11234022)
 
 #### Learning objectives: 
 Comment on the emergence of microbial life and the evolution of Earth systems. 
@@ -286,6 +287,8 @@ Comment on the emergence of microbial life and the evolution of Earth systems.
 **0.4 Ma** - Land plants  
 
 ### Problem set 02
+[Falkowski *et al* 2008](http://www.sciencemag.org/content/320/5879/1034.abstract)
+
 #### Learning objectives: 
 Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles
 
@@ -333,11 +336,11 @@ Despite the different environmental conditions, microbes have acquired new genet
 
 -evolution of boutqiue genes that protect the metabolic pathway 
 
-### Evidence worksheet 03 [Rockstrom, Nature_2009]
+### Evidence worksheet 03 
+[Rockstrom 2009](http://www.narcis.nl/publication/RecordID/oai:library.wur.nl:wurpubs%2F385190)
 
 #### Learning objectives: 
 Discuss the relationship between microbial community structure and metabolic diversity  
-
 Evaluate common methods for studying the diversity of microbial communities  
 Recognize basic design elements in metagenomic workflows  
 
@@ -351,16 +354,16 @@ How are the thresholds for sustaining the Earth-system processes, the planetary 
 Human activities are a key trigger in exceeding these set thresholds, how far or close is the society in transgressing these set boundaries? 
 
 * What were the primary methodological approaches used?  
-- proposed climate boundary is defined by two parameters:  
+proposed climate boundary is defined by two parameters:
 1. atmospheric concentration of carbon dioxide  
 2. radiative forcing 
-- defining preconditions for human development  
+defining preconditions for human development  
 1. impact of human actions in relation to the Earth sustaining capacity
 2. understanding the essential Earth processes 
 3. understanding the thresholds and shifts between living systems 
 
 * Summarize the main results or findings.  
-- discovered nine processes required to define planetary boundaries:  
+discovered nine processes required to define planetary boundaries:
 1. climate change  
 2. rate of biodiversity loss
 3. interference with the nitrogen and phosphorus cycles
@@ -371,24 +374,24 @@ Human activities are a key trigger in exceeding these set thresholds, how far or
 8. chemical polution
 9. atmospheric aerosol loading 
 
-- soonly approaching the boundaries are: global freshwater use, change in land use, ocean acidification, and interference of the global phosphorous cycle
+soonly approaching the boundaries are: global freshwater use, change in land use, ocean acidification, and interference of the global phosphorous cycle  
 
-- already transgressed boundaries: climate change, rate of biodiversity loss, and interference with the nitrogen cycle 
+already transgressed boundaries: climate change, rate of biodiversity loss, and interference with the nitrogen cycle   
 
 * Do new questions arise from the results?  
 
 How do you mitigate a balance bewteen human acitivites and exceeding thresholds 
 
-- human activities are the main cause of accleration
-- changes in land use create the most significant effect 
-- earth cannot sustain the current rate of loss without significant erosion of ecosystem resilience
+human activities are the main cause of accleration  
+changes in land use create the most significant effect   
+earth cannot sustain the current rate of loss without significant erosion of ecosystem resilience  
 
 
 
 * Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
 
-- the effects of the overlap of one boundary with another is not well understood yet
-- unable to provide a timeline in confidence to determine when dangerous environmental changes will exacerbate the Earth system or help return it to normal levels 
+the effects of the overlap of one boundary with another is not well understood yet     
+unable to provide a timeline in confidence to determine when dangerous environmental changes will exacerbate the Earth system or help return it to normal levels 
 
 
 
@@ -418,7 +421,8 @@ References
 5. Colin N Waters, Jan Zalasiewicz, Colin Summerhayes, Anthony D Barnosky, Clément Poirier, Agnieszka Galuszka, Alejandro Cearreta, Matt Edgeworth, Erle C Ellis, Michael Ellis, Catherine Jeandel, Reinhold Leinfelder, J R McNeill, Daniel deB Richter. 2016. The Anthropocene is functionally and stratigraphically distinct from the Holocene. Science. 351:aad2622. doi: 10.1126/science.aad2622.  
 6. Nisbet, EG. 2001. The habitat and nature of early life. Nature. 409:1083-1091. doi: 10.1038/35059210.  
 7. Mooney, C. 2016. Scientists say humans have now brought on an entirely new geologic epoch. The Washington Post. .  
-8. Joel Achenbach, Published: January, 2. Spaceship Earth: A new view of environmentalism. .  
+8. Joel Achenbach, Published: January, 2. Spaceship Earth: A new view of environmentalism. 
+
 
 ### Module 01 references
 
@@ -428,10 +432,11 @@ James F. Kasting, Janet L. Siefert. Life and the Evolution of Earth's Atmosphere
 
 Sleep, NH, Nisbet, EG. 2001. The habitat and nature of early life. Nature. 409:1083-1091. doi: 10.1038/35059210. http://www.ncbi.nlm.nih.gov/pubmed/11234022.
 
+Rockström, J, Steffen, W, Noone, K, Scheffer, M. 2009. A safe operating space for humanity. Nature. 461:472-475. doi: 10.1038/461472a. http://www.narcis.nl/publication/RecordID/oai:library.wur.nl:wurpubs%2F385190.
+
 # Module 02
 ## Remapping the Body of the World
 ### Evidence worksheet 04
-
 [Martinez *et al* 2007](http://www.jstor.org/stable/25427240.) 
 
 #### Learning objectives
@@ -440,73 +445,84 @@ Evaluate common methods for studying the diversity of microbial communities.
 Recognize basic design elements in metagenomic workflows.  
 
 ####Specific Questions:
-* What were the main questions being asked? 
-One of the main questions asked is to characterize PR photosystem structure and function 
-- to characterize the genetic system of the PR gene
-- functional screen
-- how wide spread is it in water column
-- what is needed to express this particular gene? widespread, indicative of horizontal gene transfer as a fitness advantage (what is minimal requirement to transfer bacteriorhodopsin?)
-  - A. classical genetics (knockouts, mutation screens)
-- require functional gene AND retinal (6 gene operon); without retinal = non-functional gene
-- not alot, transferable
-- organism studied is not in culture, could we use a heterologous expression system to identify the minimal functional requirement for the phenotype (minimal set of genes to confer the phenotype)
+* What were the main questions being asked?  
+
+One of the main questions asked is to characterize PR photosystem structure and function:  
+  -to characterize the genetic system of the PR gene  
+  -functional screen  
+  -how wide spread is it in water column  
+
+What is needed to express this particular gene?
+  -widespread, indicative of 
+horizontal gene transfer as a fitness advantage (what is minimal requirement to transfer bacteriorhodopsin?)  
+  -A. classical genetics (knockouts, mutation screens)  
+  -require functional gene AND retinal (6 gene operon); without retinal = non-functional gene
+  -not alot, transferable  
+  -organism studied is not in culture, could we use a heterologous expression system to identify the minimal functional requirement for the phenotype (minimal set of genes to confer the phenotype)
 
 
-* What were the primary methodological approaches used?  
-- screened large-insert DNA libraries derived from marine picoplanton for detectable PR-expressing phenotypes 
-- analyzed different transposon mutant phenotypes that carried an insertion in the predicted PR photosystem genes 
-- PR-containing clones were further analyzed for PR photosystem gene expression and function 
-- functional annotation of the putative retinal biosynthesis genes was completed by analysis of transposon mutant phenotypes that carried an insertion in predited PR photosystem genes
-- two clones were assayed for light-activated proton-translocating activity under high-copy number conditions 
-  - light-dependent decreases in pH were observed in PR+ clones
-- measured light=induced changes in aTP levels using luciferase-based assay
-- using fosmid vectors that were induced to high copy numbers were critical
+* What were the primary methodological approaches used?   
+
+Screened large-insert DNA libraries derived from marine picoplanton for detectable PR-expressing phenotypes:   
+  -analyzed different transposon mutant phenotypes that carried an insertion in the predicted PR photosystem genes  
+  -PR-containing clones were further analyzed for PR photosystem gene expression and function  
+  -functional annotation of the putative retinal biosynthesis genes was completed by analysis of transposon mutant phenotypes that carried an insertion in predited PR photosystem genes  
+  -two clones were assayed for light-activated proton-translocating activity under high-copy number conditions   
+  -light-dependent decreases in pH were observed in PR+ clones  
+  -measured light=induced changes in aTP levels using luciferase-based assay  
+  -using fosmid vectors that were induced to high copy numbers were critical  
 
 
-* Summarize the main results or findings.  
-- "assignments of PR-associated retinal biosynethetic pathway genes and demonstrate that they are neessary and sufficient to induce retinal biosynthesis in E. coli"
-- annotate functionals without subcloning 
-- DNA they worked with did not come from E. coli, came from environment; programmed heterologous host; screen for a phenotype in E.coli that isn't normally expressed by them 
+* Summarize the main results or findings.   
 
-- complete intact PR-based photosystems can be functionally expressed in E. coli without adding exogenous photopigment  
-- gene products in the photosynthetic biosynthetic pathway was verified using insertional mutants
+"assignments of PR-associated retinal biosynethetic pathway genes and demonstrate that they are neessary and sufficient to induce retinal biosynthesis in E. coli"  
 
-- "functional assignments of PR-associated retinal biosynthetic pathway genes are necessary and sufficient to induce retinal biosynthesis in E. coli"
+annotate functionals without subcloning  
+
+DNA they worked with did not come from E. coli, came from environment; programmed heterologous host; screen for a phenotype in E.coli that isn't normally expressed by them  
+
+complete intact PR-based photosystems can be functionally expressed in E. coli without adding exogenous photopigment  
+
+gene products in the photosynthetic biosynthetic pathway was verified using insertional mutants  
+
+"functional assignments of PR-associated retinal biosynthetic pathway genes are necessary and sufficient to induce retinal biosynthesis in E. coli"  
 
 
 * Do new questions arise from the results?  
-- unclear whether low levels of retinal were due to polar effects caused by transposon insertion in downstream expression or result of pathway inhibition due to product accumulation 
+
+unclear whether low levels of retinal were due to polar effects caused by transposon insertion in downstream expression or result of pathway inhibition due to product accumulation  
 
 
-* Were there any specific challenges or advantages in understanding the paper (e.g. did the
-authors provide sufficient background information to understand experimental logic, were
-methods explained adequately, were any specific assumptions made, were conclusions justified
-based on the evidence, were the figures or tables useful and easy to understand)?  
-- large-insert libraries increase the probability of capturing complete metabolic pathways in a single clone, their low copy number decreases the sensitivity of detecting heterologous gene expression 
-- unable to detect all PR-containing clones known to exist in the library
+* Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+
+large-insert libraries increase the probability of capturing complete metabolic pathways in a single clone, their low copy number decreases the sensitivity of detecting heterologous gene expression  
+
+unable to detect all PR-containing clones known to exist in the library  
 
 
 
 ### Problem set 03 
 #### Learning objectives: 
 Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.  
-*(Reminders for how to format links, etc in RMarkdown are in the RMarkdown Cheat Sheets)*
+
 
 #### Specific Questions:
 * How many prokaryotic divisions have been described and how many have no cultured representatives (microbial dark matter)?  
-2016 
-- 89 bacterial phyla, 28 archael phyla } via small 16S rRNA databases
-- but could be up to 1500 bacterial phyla in the "shadow biosphere"
 
-2003
-- 26 of 52 major bacterial phyla have been cultured 
+2016:   
+  -89 bacterial phyla, 28 archael phyla } via small 16S rRNA databases
+  -but could be up to 1500 bacterial phyla in the "shadow biosphere"
+
+2003:  
+  -26 of 52 major bacterial phyla have been cultured 
 
 * How many metagenome sequencing projects are currently available in the public domain and what types of environments are they sourced from?  
 
-- 110,000 on EBI database
-- many projects are available, constantly changing 
-- most projects are not in public repositories, number is not entirely representative 
-- go to MG-RAST to check up the break down of projects based on different environments
+There are:  
+  -110,000 on EBI database  
+  -many projects are available, constantly changing   
+  -most projects are not in public repositories, number is not entirely representative   
+  -go to MG-RAST to check up the break down of projects based on different environments  
 
 * What types of on-line resources are available for warehousing and/or analyzing environmental sequence information (provide names, URLS and applications)?   
 
@@ -541,15 +557,13 @@ Phylogenetic gene anchors resolve evolutionary relations between organisms where
 
 * What is metagenomic sequence binning? What types of algorithmic approaches are used to produce sequence bins? What are some risks and opportunities associated with using sequence bins for metabolic reconstruction of uncultivated microorganisms?   
 
-Binning refers to the process of sorting DNA sequences into groups that might represent an individual genome or genomes from closely related organisms
+Binning refers to the process of sorting DNA sequences into groups that might represent an individual genome or genomes from closely related organisms; based on GC contents 
 
-- based on GC contents 
+Issues:  
+  -incomplete coverage of genome, if reads don't cover every gene --> not entirely representative  
+  -sequence of different organisms may be too similar and overlap --> be in a bin that isn't supposed to be there  
 
-Issues
-- incomplete coverage of genome, if reads don't cover every gene --> not entirely representative
-- sequence of different organisms may be too similar and overlap --> be in a bin that isn't supposed to be there
-
-90% 5-10% contamination is acceptable
+But, 90% 5-10% contamination is acceptable
 
 * Is there an alternative to metagenomic shotgun sequencing that can be used to access the metabolic potential of uncultivated microorganisms? What are some risks and opportunities associated with this alternative?  
 
@@ -585,7 +599,6 @@ Part 1: Description and enumeration
 
 ```{r}
 #To make tables
-install.packages("kableExtra")
 library(kableExtra)
 library(knitr)
 #To manipulate and plot data
@@ -613,31 +626,16 @@ example_data1 %>%
 
 Part 2: Find and use an R function to calculate and plot a collector's curve from the total community Table 1 (also called a rarefaction curve, hint: look into the `vegan` package). As you will need to learn new R functions for this, you can recover full marks for this portion.
 
+```{r}
+##use rarecurve(x, step = 1, sample, xlab = "Sample Size", ylab = "Species",
+         ## label = TRUE, col, lty, ...)
 
+```
 
 
 Parts 3 and 4: Use code from the attached R script to randomly subsample Table 1 to 100 candies. Use this subsampled data and the Table 1 data to calculate reciprocal Shannon's and Chao1 by hand and with R functions as described in the problem set. Full marks possible.
 
-```{r}
-# Load packages
-library(tidyverse)
-library(phyloseq)
 
-# Load your data
-## Name your data table "Table1" or modify the following code to use your data table's name 
-
-# Modify Table 1 to be a community matrix, i.e. samples as rows (you will only have 1), "species" as columns, and the encompassed data as counts of those "species" in the sample
-community = Table1 %>% 
-  # Select only name and count columns
-  select(name, occurences) %>%
-  # Spread into taxa as columns format
-  spread(name, occurences) %>% 
-  # Convert to phyloseq OTU table data type
-  otu_table(taxa_are_rows = FALSE) 
-
-# Create a random subsample (rarefy) the data to 100 observations
-subsample = as.data.frame(rarefy_even_depth(community, sample.size=100, replace=FALSE, rngseed=762))
-``` 
 
 Part 5: Complete as normal. Full marks possible
 #### Part 5: Concluding activity
@@ -651,24 +649,22 @@ If you are stuck on some of these final questions, reading the [Kunin et al. 201
 * How might different sequencing technologies influence observed diversity in a sample?
 
 
+are the values the same why?  
+are the values different why?  
 
-**are the values the same why?
-**are the values different why?
-
-Rules for analyzing microbial species:
-- use the most updated/curated database 
-- filtering out errors, strigent data control
-- universal gene amplification (16S rRNA)
-  - different regions of amplifcation, make sure to use same (primer bias)
-- consistent with DNA preparation for sequencing, use controls  
-- consistent sampling methods
-- consistent with species definition (i.e. 97% Seq, 100% ASV) 
+Rules for analyzing microbial species:  
+  -use the most updated/curated database  
+  -filtering out errors, strigent data control  
+  -universal gene amplification (16S rRNA)  
+  -different regions of amplifcation, make sure to use same (primer bias)  
+  -consistent with DNA preparation for sequencing, use controls  
+  -consistent sampling methods  
+  -consistent with species definition (i.e. 97% Seq, 100% ASV)   
 
 
 
 ### Evidence worksheet 05 
 [Welch *et al* 2002](http://www.jstor.org/stable/3074056)
-
 
 #### Learning objectives (Part I): 
 Evaluate the concept of microbial species based on environmental surveys and
@@ -682,22 +678,24 @@ communities.
 
 
 ####Specific  Questions:
-* What were the main questions being asked? 
+* What were the main questions being asked?  
+
 How do the three different pathogenic E. coli strains (2 pathogenic, 1 non-pathogenic) differ from each other in genome composition and how do they contribute to the pathogenesis of intestinal diseases?  
 
-How does lateral gene transfer contribute to the emergence of new uropathogenic E. coli strains and the characteristic of lifestyle and disease-causing traits?  
+How does lateral gene transfer contribute to the emergence of new uropathogenic E. coli strains and the characteristic of lifestyle and disease-causing traits?   
 
-- Genetic diversity of the evolution of E. coli pathogenesis  
-- Determine conserved pathogenicity island  
-- Codon usage   
+Genetic diversity of the evolution of E. coli pathogenesis  
+Determine conserved pathogenicity island   
+Codon usage    
 
 
 * What were the primary methodological approaches used?  
 
-- Genome sequence was annotated using MAGPIE and ORFS were defined using GLIMMER  
-- potential protein sequences were searched against the nr/nt database using BLAST  
-- shot gun library sequence and PCR  
-- Used 90% identity match of CFT073 in either MG1655 or EDL933, 90% of both genes in alignments, and lack of equivalent match in other location in CFT073 genome used to infer orthology  
+The approaches were:  
+-Genome sequence was annotated using MAGPIE and ORFS were defined using GLIMMER    
+-potential protein sequences were searched against the nr/nt database using BLAST    
+-shot gun library sequence and PCR    
+-Used 90% identity match of CFT073 in either MG1655 or EDL933, 90% of both genes in alignments, and lack of equivalent match in other location in CFT073 genome used to infer orthology    
 
 * Summarize the main results or findings.  
 
@@ -709,31 +707,34 @@ Island acquisition resulted in the capability to infect the urinary tract and bl
 
 Acquired genes promote the colonization of the different regions of the intestine and promote the different clinical variants  
 
-Similar virulence genes, but linkage relationship and chromosomal locations vary  
+Similar virulence genes, but linkage relationship and chromosomal locations vary   
 
 Specific regions for insertion of infectious genes are conserved (location is conserved, not specificity to genes)  
+
 Great genetic diversity between PAIs of pathogenic/pathogenic strains, pathogenic/non-pathogenic  
 
-Common core chromosome of the E. coli genomes has been preserved throughout its vertical evolution  
+Common core chromosome of the E. coli genomes has been preserved throughout its vertical evolution   
 
 
 * Do new questions arise from the results?  
 
-Need ways to assess the deletion of genes that are detrimental to the uropathogenic lifestyle  
-- perhaps selective pressure to conserve pathogenic associated islands  
+Need ways to assess the deletion of genes that are detrimental to the uropathogenic lifestyle:  
+-perhaps selective pressure to conserve pathogenic associated islands  
 
-How similar/different are these three pathogenic strains from other pathogens?   
-Comparing three genotypes  
-- core gene sets vs accessory gene sets associated with each strain  
+How similar/different are these three pathogenic strains from other pathogens?  
 
-How do you define species given such a fine line separation of the different strains?
-→ How can species be defined to account for frequent gain and loss of accessory genes → cannot simply define species by phenotypic analysis and low resolution mapping alone  
+Comparing three genotypes:    
+-core gene sets vs accessory gene sets associated with each strain  
+
+How do you define species given such a fine line separation of the different strains?  
+→ How can species be defined to account for frequent gain and loss of accessory genes
+→ cannot simply define species by phenotypic analysis and low resolution mapping alone  
  
 
 * Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)? 
 
-- Require prior knowledge in understanding the genetics   
-- Assumption that readers have a rich knowledge in the overall E. coli genome   
+Require prior knowledge in understanding the genetics   
+Assumption that readers have a rich knowledge in the overall *E. coli* genome   
 
 
 #### Learning objectives (Part II):
@@ -745,6 +746,12 @@ Identify common molecular signatures used to infer genomic identity and cohesion
 Differentiate between mobile elements and different modes of gene transfer  
 
 * Based on your reading and discussion notes, explain the meaning and content of the following figure derived from the comparative genomic analysis of three E. coli genomes by Welch et al.Remember that CFT073 is a uropathogenic strain and that EDL933 is an enterohemorrhagic strain. Explain how this study relates to your understanding of ecotype diversity. Provide a definition of ecotype in the context of the human body. Explain why certain subsets of genes in CFT073 provide adaptive traits under your ecological model and speculate on their mode of vertical descent or gene transfer.
+
+Ecotype examples:  
+-skin colour, genetic lineage of race  
+-varying blood types  
+-nutrient intake  
+-environmental and genetic factors that influence the colonization of different bacteria  
 
 
 ##Module 3 References

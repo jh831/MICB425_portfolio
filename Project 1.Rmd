@@ -1,0 +1,270 @@
+---
+title: "Project 1"
+author: "Jenny He (25889149)"
+date: "3/9/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Abstract
+
+# Introduction
+
+# Methods
+
+# Results
+
+
+```{r}
+library("tidyverse")
+library("phyloseq")
+library("magrittr")
+
+load("mothur_phyloseq.RData")
+set.seed(4832)
+m.norm = rarefy_even_depth(mothur, sample.size=100000)
+m.perc = transform_sample_counts(m.norm, function(x) 100 * x/sum(x))
+
+plot_bar(m.perc, fill="Genus") + 
+  geom_bar(aes(fill=Genus), stat="identity")
+
+
+plot_bar(m.perc, fill="Family") +
+  geom_bar(aes(fill=Family), stat="identity") +
+  facet_wrap(~Family, scales="free_y") +
+  theme(legend.position="none")
+
+```
+
+##1. How does microbial community structure change with depth and oxygen concentration?
+    + Alpha-diversity
+    + Taxa presence and abundance
+    
+##2. Does your taxon of interest *significantly* differ in abundance with depth and/or oxygen concentration?
+
+```{r}
+m.norm %>% 
+  subset_taxa(Family=="Oceanospirillaceae") %>% 
+  tax_glom(taxrank = 'Family') %>%
+  psmelt() %>%
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+m.perc %>% 
+  subset_taxa(Family=="Oceanospirillaceae") %>% 
+  psmelt() %>% 
+  group_by(Sample) %>% 
+  summarize(Abundance_sum=sum(Abundance), Depth_m=mean(Depth_m)) %>% 
+  
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(Depth_m), y=Abundance_sum)) +
+  labs(title="Abundance of Family Oceanospirillaceae across depth")
+
+##What about by oxygen?
+
+m.norm %>% 
+  subset_taxa(Family=="Oceanospirillaceae") %>% 
+  tax_glom(taxrank = 'Family') %>%
+  psmelt() %>%
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+m.perc %>% 
+  subset_taxa(Family=="Oceanospirillaceae") %>% 
+  psmelt() %>% 
+  group_by(Sample) %>% 
+  summarize(Abundance_sum=sum(Abundance), O2_uM=mean(O2_uM)) %>% 
+  
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Abundance_sum)) +
+  labs(title="Abundance of Family Oceanospirillaceae across oxygen level")
+
+```
+
+##3. Within your taxon, what is the richness (number of OTUs/ASVs)?
+
+```{r}
+m.norm %>% 
+  subset_taxa(Genus=="Oceanospirillum") 
+
+##counting OTUS
+
+m.norm %>% 
+  subset_taxa(Genus=="Oceanospirillum") %>%
+  estimate_richness(measures = c("Observed"))
+
+```
+
+##4. Do the abundances of OTUs/ASVs within your taxon of interest change *significantly* with depth and/or oxygen concentration?
+
+General linear model for each OTU
+
+OTU0757
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu0757") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+```
+
+OTU0743
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu0843") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+```
+OTU1115
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu1115") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+```
+OTU1436
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu1436") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+```
+OTU4161
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu4161") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+```
+Adjust P values 
+```{r}
+p.adjust(c(0.532, 0.532, 0.532, 0.532, 0.532), method="fdr")
+```
+
+```{r}
+m.perc %>% 
+  subset_taxa(Family=="Oceanospirillaceae") %>% 
+  psmelt() %>% 
+  
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance)) +
+  geom_smooth(method='lm', aes(x=Depth_m, y=Abundance)) +
+  facet_wrap(~OTU, scales="free_y") +
+  labs(title="Abundance of OTUs within family Oceanospirillaceae across depth")
+
+```
+
+```{r}
+m.perc %>% 
+  subset_taxa(Family=="Oceanospirillaceae") %>%
+  psmelt() %>% 
+  
+ggplot() +
+  geom_point(aes(x=Sample, y=OTU, size=Abundance, color=OTU)) + 
+  scale_size_continuous(range = c(0,5)) +
+  labs(title="Abundance of OTUs within family Oceanospirillaceae across depth")
+
+```
+
+**Oxygen**
+
+General linear model for each OTU  
+OTU0757
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu0757") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+```
+OTU0743
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu0843") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+```
+OTU1115
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu1115") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+```
+OTU1436
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu1436") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+```
+OTU4161
+```{r}
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu4161") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+```
+
+**Repeat for all OTUs within domain and then correct for multiple comparisons.**
+
+This is all made up p-values.
+```{r}
+p.adjust(c(0.591, 0.591, 0.591, 0.591, 0.591), method="fdr")
+```
+
+Plots to go along with these tests.
+```{r}
+m.perc %>% 
+  subset_taxa(Family=="Oceanospirillaceae") %>% 
+  psmelt() %>% 
+  
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance)) +
+  geom_smooth(method='lm', aes(x=O2_uM, y=Abundance)) +
+  facet_wrap(~OTU, scales="free_y") +
+  labs(title="Abundance of OTUs within family Oceanospirillaceae across oxygen")
+```
+
+```{r}
+m.perc %>% 
+  subset_taxa(Family=="Oceanospirillaceae") %>%
+  psmelt() %>% 
+  
+ggplot() +
+  geom_point(aes(x=O2_uM, y=OTU, size=Abundance, color=OTU)) + 
+  scale_size_continuous(range = c(0,5)) +
+  labs(title="Abundance of OTUs within family Oceanospirillaceae across oxygen")
+```
+
+
+
+##5. Are the answers to the above the same using mothur and QIIME2 processed data?
+
+
