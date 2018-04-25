@@ -1,0 +1,34 @@
+Query	Marker	Taxonomy	Confident_Taxonomy	Abundance	Likelihood	WTD
+scaffold179793	nosZ	SAR324; SAR324	SAR324; SAR324	0	1.0	0.0
+scaffold02610	nosZ	SUP05; SUP05	SUP05; SUP05	1.07957	1.0	0.0
+scaffold00965	nosZ	SAR324; SAR324	SAR324; SAR324	0.344242	1.0	0.0
+scaffold262473	nosZ	Bacteria	Bacteria	0	0.373665	0.5
+scaffold221196	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0	0.963343	0.0
+scaffold00139	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	0.601317	1.0	0.0
+scaffold00002	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	0.61476	1.0	0.0
+scaffold85747	nosZ	SUP05; SUP05	SUP05; SUP05	0	1.0	0.0
+scaffold290825	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0.254403	0.665589	0.0
+scaffold00129	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0.067323	0.994404	0.0
+scaffold287207	nosZ	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae	0	0.501466	0.03472
+scaffold100484	nosZ	Bacteria; Aquificae; Aquificae; Aquificales	Bacteria; Aquificae; Aquificae; Aquificales	0	0.376018	0.0625
+scaffold186034	nosZ	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Rhodanobacteraceae; Rhodanobacter	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Rhodanobacteraceae; Rhodanobacter	0	0.757067	0.01562
+scaffold307909	nosZ	Bacteria; Proteobacteria	Bacteria; Proteobacteria	0	0.861376	0.24629
+scaffold00022	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	1.35853	0.999148	0.0
+scaffold71124	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	0.223085	0.98378	0.0
+scaffold01071	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	0.203335	0.999148	0.0
+scaffold163108	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	1.73584	1.0	0.0
+scaffold140630	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Robiginitalea; biformata	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Robiginitalea	0	0.944214	0.0
+scaffold331815	nosZ	SUP05; SUP05	SUP05; SUP05	0	0.574017	0.0
+scaffold23926	nosZ	SAR324; SAR324	SAR324; SAR324	0	1.0	0.0
+scaffold147601	nosZ	SAR324; SAR324	SAR324; SAR324	0.172252	1.0	0.0
+scaffold136548	nosZ	SUP05; SUP05	SUP05; SUP05	0	1.0	0.0
+scaffold21015	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	0	0.714672	0.0
+scaffold10368	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga; DSM	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga	0.296481	0.999977	0.0
+scaffold312530	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0	0.749487	0.0
+scaffold209363	nosZ	Bac22; Bac22	Bac22; Bac22	0	0.40165	0.0
+scaffold174302	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga; DSM	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga	1.13716	0.897039	0.0
+scaffold99216	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0.136381	0.999954	0.0
+scaffold224016	nosZ	Bac22; Bac22	Bac22; Bac22	0	0.434888	0.0
+scaffold02584	nosZ	GAMMA; GAMMA	GAMMA; GAMMA	0.0323499	1.0	0.0
+scaffold297972	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	0.258378	0.512928	0.0
+scaffold195357	nosZ	SAR324; SAR324	SAR324; SAR324	0	0.999968	0.0

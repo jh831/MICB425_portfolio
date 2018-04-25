@@ -1,0 +1,30 @@
+Query	Marker	Taxonomy	Confident_Taxonomy	Abundance	Likelihood	WTD
+scaffold106932	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga; DSM	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga	0.0808083	0.918055	0.0
+scaffold190532	nosZ	SUP05; SUP05	SUP05; SUP05	0	1.0	0.0
+scaffold17557	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	1.22065	1.0	0.0
+scaffold72438	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	0.384274	1.0	0.0
+scaffold272143	nosZ	SUP05; SUP05	SUP05; SUP05	0	1.0	0.0
+scaffold12378	nosZ	SUP05; SUP05	SUP05; SUP05	2.62671	1.0	0.0
+scaffold246489	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	0.519482	1.0	0.0
+scaffold02231	nosZ	GAMMA; GAMMA	GAMMA; GAMMA	0.53354	1.0	0.0
+scaffold230326	nosZ	SUP05; SUP05	SUP05; SUP05	0	1.0	0.0
+scaffold98418	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	2.3928	1.0	0.0
+scaffold12192	nosZ	SUP05; SUP05	SUP05; SUP05	0.806784	1.0	0.0
+scaffold185171	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga; DSM	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga	164.742	0.499035	0.0
+scaffold33350	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	2.23904	1.0	0.0
+scaffold00074	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	1.19203	1.0	0.0
+scaffold179874	nosZ	Bac22; Bac22	Bac22; Bac22	0.217458	1.0	0.0
+scaffold119851	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	0.259056	1.0	0.0
+scaffold00149	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	10.1462	1.0	0.0
+scaffold188284	nosZ	SAR324; SAR324	SAR324; SAR324	0.670185	1.0	0.0
+scaffold51579	nosZ	SAR324; SAR324	SAR324; SAR324	3.98242	1.0	0.0
+scaffold108633	nosZ	SUP05; SUP05	SUP05; SUP05	0.816144	1.0	0.0
+scaffold00014	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	1.36572	0.994404	0.0
+scaffold122705	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0.175013	0.549524	0.0
+scaffold174764	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	1.06952	1.0	0.0
+scaffold234932	nosZ	Archaea; Crenarchaeota; Thermoprotei; Thermoproteales; Thermoproteaceae; Pyrobaculum	Archaea; Crenarchaeota; Thermoprotei; Thermoproteales; Thermoproteaceae; Pyrobaculum	1.51633	0.338854	0.17708
+scaffold150320	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0.589682	0.568995	0.0
+scaffold00027	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	1.61063	0.999148	0.0
+scaffold36796	nosZ	SAR324; SAR324	SAR324; SAR324	24.7059	1.0	0.0
+scaffold125767	nosZ	SUP05; SUP05	SUP05; SUP05	0.354768	1.0	0.0
+scaffold121778	nosZ	SAR324; SAR324	SAR324; SAR324	0.698184	1.0	0.0

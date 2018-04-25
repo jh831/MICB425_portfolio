@@ -1,0 +1,21 @@
+Query	Marker	Taxonomy	Confident_Taxonomy	Abundance	Likelihood	WTD
+scaffold113323	nosZ	Bac22; Bac22	Bac22; Bac22	1.89169	1.0	0.0
+scaffold00046	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	18.6715	0.999148	0.0
+scaffold00180	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	11.9107	1.0	0.0
+scaffold00016	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	10.6407	1.0	0.0
+scaffold00666	nosZ	SUP05; SUP05	SUP05; SUP05	4.92718	1.0	0.0
+scaffold109979	nosZ	Bac22; Bac22	Bac22; Bac22	3.24509	1.0	0.0
+scaffold00135	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	9.1629	1.0	0.0
+scaffold01399	nosZ	GAMMA; GAMMA	GAMMA; GAMMA	46.1828	1.0	0.0
+scaffold00774	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	43.6824	1.0	0.0
+scaffold121567	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	3.17366	0.998828	0.0
+scaffold121219	nosZ	Bacteria; Proteobacteria; Betaproteobacteria; Rhodocyclales	Bacteria; Proteobacteria; Betaproteobacteria; Rhodocyclales	1.77725	0.699574	0.05208
+scaffold100517	nosZ	Bac22; Bac22	Bac22; Bac22	2.16817	1.0	0.0
+scaffold00440	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	13.4322	1.0	0.0
+scaffold02769	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	3.24085	1.0	0.0
+scaffold111520	nosZ	Bac22; Bac22	Bac22; Bac22	0.908322	1.0	0.0
+scaffold111917	nosZ	Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales	Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales	1.02943	0.941593	0.09135
+scaffold53328	nosZ	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Pseudovibrio; sp.	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Pseudovibrio	1.12614	0.554551	0.0
+scaffold81258	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	1.95679	0.541724	0.0
+scaffold73219	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	0.846686	1.0	0.0
+scaffold55821	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	1.60049	1.0	0.0

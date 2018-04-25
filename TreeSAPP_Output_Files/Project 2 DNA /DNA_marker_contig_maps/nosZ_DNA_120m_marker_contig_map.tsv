@@ -1,0 +1,12 @@
+Query	Marker	Taxonomy	Confident_Taxonomy	Abundance	Likelihood	WTD
+scaffold02610	nosZ	SUP05; SUP05	SUP05; SUP05	7.53551	1.0	0.0
+scaffold262473	nosZ	Bacteria	Bacteria	3.89754	0.373665	0.5
+scaffold290825	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	4.4067	0.665589	0.0
+scaffold100484	nosZ	Bacteria; Aquificae; Aquificae; Aquificales	Bacteria; Aquificae; Aquificae; Aquificales	1.94658	0.376018	0.0625
+scaffold186034	nosZ	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Rhodanobacteraceae; Rhodanobacter	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Rhodanobacteraceae; Rhodanobacter	0.989985	0.757067	0.01562
+scaffold307909	nosZ	Bacteria; Proteobacteria	Bacteria; Proteobacteria	2.10219	0.861376	0.24629
+scaffold00022	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	8.19247	0.999148	0.0
+scaffold01071	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	8.61213	0.999148	0.0
+scaffold23926	nosZ	SAR324; SAR324	SAR324; SAR324	3.24047	1.0	0.0
+scaffold147601	nosZ	SAR324; SAR324	SAR324; SAR324	1.1229	1.0	0.0
+scaffold136548	nosZ	SUP05; SUP05	SUP05; SUP05	1.25963	1.0	0.0

@@ -1,0 +1,35 @@
+Query	Marker	Taxonomy	Confident_Taxonomy	Abundance	Likelihood	WTD
+scaffold54847	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Robiginitalea; biformata	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Robiginitalea	0.37917	0.744492	0.0
+scaffold229366	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0	0.82896	0.0
+scaffold428110	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0	0.999818	0.0
+scaffold338805	nosZ	SAR324; SAR324	SAR324; SAR324	0	1.0	0.0
+scaffold330079	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	0.145846	0.4464	0.0
+scaffold131367	nosZ	SUP05; SUP05	SUP05; SUP05	4.28689	1.0	0.0
+scaffold133910	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	0	1.0	0.0
+scaffold331353	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	1.16677	0.373111	0.0
+scaffold00408	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	184.282	1.0	0.0
+scaffold306912	nosZ	SAR324; SAR324	SAR324; SAR324	0	1.0	0.0
+scaffold234150	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	0.752131	1.0	0.0
+scaffold60802	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	0.0908187	0.955196	0.0
+scaffold18604	nosZ	SUP05; SUP05	SUP05; SUP05	111.681	1.0	0.0
+scaffold124052	nosZ	SUP05; SUP05	SUP05; SUP05	122.038	1.0	0.0
+scaffold278184	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	1.10195	1.0	0.0
+scaffold190021	nosZ	SAR324; SAR324	SAR324; SAR324	0.302184	1.0	0.0
+scaffold73772	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	0.628483	0.990982	0.0
+scaffold00053	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	1.5925	0.994404	0.0
+scaffold177032	nosZ	SAR324; SAR324	SAR324; SAR324	0.0963386	1.0	0.0
+scaffold166174	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Robiginitalea; biformata	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Robiginitalea	0.0923157	0.873539	0.0
+scaffold30664	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga; DSM	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga	0.82793	0.999987	0.0
+scaffold297785	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	1.42731	1.0	0.0
+scaffold01142	nosZ	GAMMA; GAMMA	GAMMA; GAMMA	6.52244	1.0	0.0
+scaffold154789	nosZ	SUP05; SUP05	SUP05; SUP05	129.394	1.0	0.0
+scaffold111923	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga; DSM	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga	7.25902	0.501455	0.0
+scaffold96737	nosZ	Bacteria; Spirochaetes; Spirochaetia; Leptospirales; Leptospiraceae; Leptospira; 1	Bacteria; Spirochaetes; Spirochaetia; Leptospirales; Leptospiraceae; Leptospira	0.127091	0.866121	0.0
+scaffold439199	nosZ	SUP05; SUP05	SUP05; SUP05	21.4116	1.0	0.0
+scaffold402611	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	3.23743	1.0	0.0
+scaffold55750	nosZ	Bacteria; Aquificae; Aquificae; Aquificales	Bacteria; Aquificae; Aquificae; Aquificales	0.938152	0.373501	0.0625
+scaffold325171	nosZ	Bacteria; Bacteroidetes	Bacteria; Bacteroidetes	0.57737	0.711775	0.28125
+scaffold00048	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	2.99417	0.999148	0.0
+scaffold165599	nosZ	SAR324; SAR324	SAR324; SAR324	0	0.628998	0.0
+scaffold94486	nosZ	SUP05; SUP05	SUP05; SUP05	38.8784	1.0	0.0
+scaffold00019	nosZ	SAR324; SAR324	SAR324; SAR324	2.60723	1.0	0.0

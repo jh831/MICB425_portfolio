@@ -1,0 +1,27 @@
+Query	Marker	Taxonomy	Confident_Taxonomy	Abundance	Likelihood	WTD
+scaffold31405	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	4.37929	1.0	0.0
+scaffold32131	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	1.06593	0.991007	0.0
+scaffold115418	nosZ	SUP05; SUP05	SUP05; SUP05	5.65873	1.0	0.0
+scaffold51542	nosZ	SUP05; SUP05	SUP05; SUP05	3.69259	1.0	0.0
+scaffold86843	nosZ	SAR324; SAR324	SAR324; SAR324	1.21956	1.0	0.0
+scaffold272059	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	1.09201	0.576216	0.0
+scaffold186807	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	1.12695	0.998623	0.0
+scaffold05536	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	2.39979	1.0	0.0
+scaffold32303	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	1.61073	0.999996	0.0
+scaffold195221	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae	1.59309	0.252509	0.075
+scaffold22648	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	4.12557	0.941961	0.0
+scaffold103647	nosZ	ZA3312c; ZA3312c	ZA3312c; ZA3312c	2.71651	0.735657	0.0
+scaffold09216	nosZ	SUP05; SUP05	SUP05; SUP05	5.21013	1.0	0.0
+scaffold37129	nosZ	EPSILON; EPSILON	EPSILON; EPSILON	2.84549	1.0	0.0
+scaffold00099	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga; DSM	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Cellulophaga	5.67243	0.999977	0.0
+scaffold00004	nosZ	SAR324; SAR324	SAR324; SAR324	9.65553	1.0	0.0
+scaffold00341	nosZ	GAMMA; GAMMA	GAMMA; GAMMA	4.15457	1.0	0.0
+scaffold20851	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	5.47279	0.974097	0.0
+scaffold63680	nosZ	SAR324; SAR324	SAR324; SAR324	2.04972	1.0	0.0
+scaffold00052	nosZ	SHBH1141; SHBH1141	SHBH1141; SHBH1141	3.85993	1.0	0.0
+scaffold90396	nosZ	SAR324; SAR324	SAR324; SAR324	6.70064	1.0	0.0
+scaffold24810	nosZ	SAR324; SAR324	SAR324; SAR324	4.37628	0.997096	0.0
+scaffold00617	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter; sp.	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Maribacter	15.0802	0.994404	0.0
+scaffold327574	nosZ	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae	Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae	2.26623	0.323636	0.075
+scaffold365225	nosZ	Bacteria; Ignavibacteriae; Ignavibacteria; Ignavibacteriales; Ignavibacteriaceae; Ignavibacterium; JCM	Bacteria; Ignavibacteriae; Ignavibacteria; Ignavibacteriales; Ignavibacteriaceae; Ignavibacterium	2.35934	0.396286	0.0
+scaffold00026	nosZ	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	Bacteria; Bacteroidetes; Bacteroidetes Order II. Incertae sedis; Rhodothermaceae; Rhodothermus; DSM	5.93005	0.999148	0.0
