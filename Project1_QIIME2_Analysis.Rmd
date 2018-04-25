@@ -1,0 +1,795 @@
+---
+title: "Qiime_Part2"
+author: "Julia Pierce (24366429) (borrowed from Nai Hsuan Shao (35980135))"
+date: "3/16/2018"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_float:
+      collapsed: no
+  pdf_document:
+    toc: yes
+subtitle: mothur vs. QIIME2 Microbiome Data Analysis
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width=10, fig.height=10)
+library("tidyverse")
+library("phyloseq")
+library("magrittr")
+```
+
+## How does microbial community structure change with depth and oxygen concentration?
+
+#### Alpha-diversity
+Alpha-diversity and richness were calculated for the total community in R.
+```{r, include=TRUE}
+load("qiime2_phyloseq.RData")
+```
+Samples were rarefied/normalized to 100,000 sequences per sample to facilitate comparisons between samples. A random seed was set to ensure reproducibility.
+```{r, include=TRUE}
+set.seed(4832)
+m.norm = rarefy_even_depth(qiime2, sample.size=100000)
+```
+Rarefied counts were converted to relative abundance percentages.
+```{r, include=TRUE}
+m.perc = transform_sample_counts(m.norm, function(x) 100 * x/sum(x))
+```
+
+```{r, include=TRUE}
+# Calculation
+m.alpha = estimate_richness(m.norm, measures = c("Chao1", "Shannon"))
+m.meta.alpha = full_join(rownames_to_column(m.alpha), rownames_to_column(data.frame(m.perc@sam_data)), by = "rowname")
+m.meta.alpha
+```
+Example plots
+```{r, include=TRUE}
+m.meta.alpha %>% 
+  
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Shannon)) +
+   geom_smooth(method='auto', aes(x=as.numeric(Depth_m), y=Shannon)) +
+  labs(title="Alpha-diversity across depth", y="Shannon's diversity index", x="Depth (m)")
+
+m.meta.alpha %>% 
+
+  ggplot() +
+  geom_point(aes(x=O2_uM, y=Shannon)) +
+   geom_smooth(method='auto', aes(x=as.numeric(O2_uM), y=Shannon)) +
+  labs(title="Alpha-diversity across oxygen", y="Shannon's diversity index", x="O2 (uM)")
+m.meta.alpha %>%
+  
+  ggplot() +
+  geom_point(aes(x=O2_uM, y=Shannon)) +
+  labs(title="Alpha-diversity across oxygen", y="Shannon's diversity index", x="Oxygen (uM)")
+
+m.meta.alpha %>% 
+  mutate(O2_group = ifelse(O2_uM == 0, "anoxic", "oxic")) %>% 
+
+# Use this in a plot
+ggplot() +
+  geom_boxplot(aes(x=O2_group, y=Shannon)) +
+  labs(title="Alpha-diversity by oxic/anoxic", y="Shannon's diversity index", x="Oxygen")
+```
+
+#### Taxa presence and abundance
+Example plots using `phyloseq` for domain data. You should explore other taxonomy levels.
+```{r, include=TRUE}
+m.perc %>% 
+plot_bar(fill="Domain") + 
+  geom_bar(aes(fill=Domain), stat="identity") +
+  labs(title="Domains across samples") +
+  labs(fill='Domain') +
+  theme(plot.title = element_text(size=35, hjust=.5,vjust=.5,face="plain"),
+        strip.text = element_text(size=12),
+        axis.title.x = element_text(size=25),
+        axis.title.y = element_text(size=25),
+        axis.text.x = element_text(colour="grey20",size=12,angle=45,hjust=1,vjust=1),
+        axis.text.y = element_text(colour="grey20",size=12),
+        legend.text = element_text(size=12),
+        legend.box.background = element_rect(),
+        legend.box.margin = margin(6, 6, 6, 6),
+        legend.position = "right")
+
+m.perc %>% 
+plot_bar() + 
+  geom_bar(aes(fill=Domain), stat="identity") +
+  facet_wrap(~Phylum, scales="free_y")+
+  labs(title="Phyla across samples")+
+  labs(fill='Domain') +
+  theme(plot.title = element_text(size=35, hjust=.5,vjust=.5,face="plain"),
+        strip.text = element_text(size=5),
+        axis.title.x = element_text(size=25),
+        axis.title.y = element_text(size=25),
+        axis.text.x = element_text(colour="grey20",size=9,angle=45,hjust=1,vjust=1),
+        axis.text.y = element_text(colour="grey20",size=9),
+        legend.text = element_text(size=12),
+        legend.box.background = element_rect(),
+        legend.box.margin = margin(6, 6, 6, 6),
+        legend.position = "bottom")
+```
+Example plots using `phyloseq` for Family data.
+```{r, include=TRUE, fig.width = 10, fig.height = 20}
+# load subset
+m.perc %>% 
+plot_bar(fill="Family") + 
+  geom_bar(aes(fill=Family), stat="identity") +
+  labs(title="Family across samples") +
+  theme(plot.title = element_text(size=17.5, hjust=.5,vjust=.5,face="plain"),
+        axis.title.x = element_text(size=12.5),
+        axis.title.y = element_text(size=12.5),
+        axis.text.x = element_text(colour="grey20",size=7.5,angle=45,hjust=1,vjust=1),
+        axis.text.y = element_text(colour="grey20",size=7.5),
+        legend.text = element_text(size=6),
+        legend.box.background = element_rect(),
+        legend.box.margin = margin(6, 6, 6, 6),
+        legend.position = "bottom")
+
+m.perc %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>% 
+plot_bar(fill="Genus") + 
+  geom_bar(aes(fill=Genus), stat="identity") +
+  labs(title="Genus of family Oceanospirillaceae across samples") +
+  labs(fill="Genus") +
+  theme(plot.title = element_text(size=17.5, hjust=.5,vjust=.5,face="plain"),
+        axis.title.x = element_text(size=12.5),
+        axis.title.y = element_text(size=12.5),
+        axis.text.x = element_text(colour="grey20",size=7.5,angle=45,hjust=1,vjust=1),
+        axis.text.y = element_text(colour="grey20",size=7.5),
+        legend.text = element_text(size=6),
+        legend.box.background = element_rect(),
+        legend.box.margin = margin(6, 6, 6, 6),
+        legend.position = "bottom")
+```
+
+Examples outside of phyloseq
+```{r, include=TRUE, fig.width = 10, fig.height = 20}
+m.perc %>%
+  tax_glom(taxrank = 'Domain') %>%
+  psmelt() %>% 
+
+ggplot() +
+  geom_boxplot(aes(x=Domain, y=Abundance)) +
+  coord_flip() +
+  labs(title="Domain boxplots")+
+  theme(plot.title = element_text(size=17.5, hjust=.5,vjust=.5,face="plain"),
+      axis.title.x = element_text(size=12.5),
+      axis.title.y = element_text(size=12.5)
+  )
+
+m.perc %>% 
+  tax_glom(taxrank = 'Family') %>%
+  psmelt() %>% 
+
+ggplot() +
+  geom_boxplot(aes(x=Family, y=Abundance)) +
+  coord_flip() +
+  labs(title="Family boxplots")+
+  theme(plot.title = element_text(size=17.5, hjust=.5,vjust=.5,face="plain"),
+    axis.title.x = element_text(size=12.5),
+    axis.title.y = element_text(size=12.5)
+  )
+
+m.perc %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>% 
+  psmelt() %>% 
+
+ggplot() +
+  geom_boxplot(aes(x=Genus, y=Abundance)) +
+  coord_flip() +
+  labs(title="Domain boxplots")+
+  theme(plot.title = element_text(size=17.5, hjust=.5,vjust=.5,face="plain"),
+    axis.title.x = element_text(size=12.5),
+    axis.title.y = element_text(size=12.5)
+  )
+
+```
+
+## Does your taxon of interest *significantly* differ in abundance with depth and/or oxygen concentration?
+
+Using the `magrittr` package, we can pipe our `tidyverse` modified data into linear models and other statiscal tests.
+
+**Depth**
+Linear model
+```{r, include=TRUE}
+m.norm %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>% 
+  tax_glom(taxrank = 'Family') %>%
+  psmelt() %>%
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+```
+Plot to go along with linear model above.
+```{r, include=TRUE}
+m.perc %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>% 
+  psmelt() %>% 
+  group_by(Sample) %>% 
+  summarize(Abundance_sum=sum(Abundance), Depth_m=mean(Depth_m)) %>% 
+  
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(Depth_m), y=Abundance_sum)) +
+  labs(title="Abundance of Family Oceanospirillaceae across depth")
+```
+
+**Oxygen**
+Linear model
+```{r, include=TRUE}
+m.norm %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>% 
+  tax_glom(taxrank = 'Family') %>%
+  psmelt() %>%
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+```
+Plot to go along with linear model above.
+```{r, include=TRUE}
+m.perc %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>% 
+  psmelt() %>% 
+  group_by(Sample) %>% 
+  summarize(Abundance_sum=sum(Abundance), O2_uM=mean(O2_uM)) %>% 
+  
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Abundance_sum)) +
+  labs(title="Abundance of Family Oceanospirillaceaes across oxygen")
+```
+
+## Within your taxon, what is the richness (number of OTUs/ASVs)?
+Across all samples, there are 28 OTUs (*i.e.* taxa) within family *Oceanospirillaceae*
+```{r}
+m.norm %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") 
+```
+Counting OTUs within family *Oceanospirillaceae* within each sample...
+```{r}
+m.norm %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>%
+  estimate_richness(measures = c("Observed"))
+```
+
+## Do the abundances of OTUs/ASVs within your taxon of interest change *significantly* with depth and/or oxygen concentration?
+
+**Depth**
+General linear model for each OTU  
+
+```{r Depth}
+#Asv107
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv107") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv120
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv120") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv131
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv131") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv213
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv213") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv243
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv243") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv417
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv417") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv476
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv476") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv668
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv668") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv810
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv810") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1050
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1050") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1152
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1152") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1283
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1283") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1352
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1352") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1414
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1414") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1430
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1430") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1486
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1486") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1490
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1490") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1570
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1570") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1593
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1593") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1797
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1797") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv1977
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1977") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv2036
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2036") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv2097
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2097") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv2125
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2125") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv2215
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2215") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv2281
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2281") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv2297
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2297") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Asv2341
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2341") %>% 
+
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+```
+**Repeated for all OTUs within domain and then corrected for multiple comparisons.**
+
+```{r}
+p.adjust(c(0.5322, 0.8776, 0.0164, 0.01002, 0.8, 0.9291, 0.2077, 0.2077, 0.007237, 0.9291, 0.707, 0.6896, 0.7976, 0.01526, 0.2077, 0.6641, 0.8502, 0.6988, 0.9291, 0.2077, 0.2077, 0.885, 0.8012, 0.6864, 0.6864, 0.7822, 0.8776, 0.2077), method="fdr")
+```
+
+Plots to go along with these tests.
+```{r}
+m.perc %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>% 
+  psmelt() %>% 
+  
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance)) +
+  geom_smooth(method='lm', aes(x=Depth_m, y=Abundance)) +
+  facet_wrap(~OTU, scales="free_y") +
+  labs(title="Example 11: Abundance of OTUs within Family Oceanospirillaceae across depth")
+```
+
+```{r, fig.width = 10, fig.height = 10}
+m.perc %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>%
+  psmelt() %>% 
+  
+ggplot() +
+  geom_point(aes(x=Sample, y=OTU, size=Abundance, color=OTU)) + 
+  scale_size_continuous(range = c(0,5)) +
+  labs(y="ASV", title="Abundance of ASVs within Family Oceanospirillaceae across depth")+
+  theme(plot.title = element_text(size=15, hjust=.5,vjust=.5,face="plain"),
+        axis.text.x = element_text(colour="grey20",size=10,angle=45,hjust=.5,vjust=.5,face="plain"),
+        legend.box.background = element_rect(),
+        legend.box.margin = margin(6, 6, 6, 6),
+        legend.position = "right")
+```
+
+**Oxygen**
+```{r Oxygen}
+#Asv107
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv107") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv120
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv120") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv131
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv131") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv213
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv213") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv243
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv243") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv417
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv417") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv476
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv476") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv668
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv668") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv810
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv810") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1050
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1050") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1152
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1152") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1283
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1283") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1352
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1352") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1414
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1414") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1430
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1430") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1486
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1486") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1490
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1490") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1570
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1570") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1593
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1593") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1797
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1797") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv1977
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv1977") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv2036
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2036") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv2097
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2097") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv2125
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2125") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv2215
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2215") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv2281
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2281") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv2297
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2297") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Asv2341
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Asv2341") %>% 
+
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+```
+
+```{r}
+p.adjust(c(0.5905, 0.5924, 0.0001264, 0.00003552, 0.6734, 0.8889, 0.5905, 0.5905, 0.0000101, 0.8889, 0.8377, 0.7813, 0.6851, 0.09034, 0.5905, 0.8984, 0.799, 0.7065, 0.8889, 0.5905, 0.5905, 0.7762, 0.6649, 0.9432, 0.9432, 0.3544, 0.7041, 0.5905), method="fdr")
+
+```
+
+Plots to go along with these tests.
+```{r}
+m.perc %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>% 
+  psmelt() %>% 
+  
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance)) +
+  geom_smooth(method='lm', aes(x=O2_uM, y=Abundance)) +
+  facet_wrap(~OTU, scales="free_y") +
+  labs(title="Example 11: Abundance of ASVs within Family Oceanospirillaceae across oxygen")
+```
+
+```{r, fig.width = 10, fig.height = 10}
+m.perc %>% 
+  subset_taxa(Family=="D_4__Oceanospirillaceae") %>%
+  psmelt() %>% 
+  
+ggplot() +
+  geom_point(aes(x=O2_uM, y=OTU, size=Abundance, color=OTU)) + 
+  scale_size_continuous(range = c(0,5)) +
+  labs(y="ASV", title="Example 12: Abundance of ASVs within Family Oceanospirillaceae across oxygen")+
+    theme(plot.title = element_text(size=15, hjust=.5,vjust=.5,face="plain"),
+        axis.text.x = element_text(colour="grey20",size=10,angle=0,hjust=.5,vjust=.5,face="plain"),
+        legend.box.background = element_rect(),
+        legend.box.margin = margin(6, 6, 6, 6),
+        legend.position = "right")
+```
+
+```{r}
+#metadata = data.frame(mothur@sam_data)
+m.meta.alpha %>% 
+  arrange(Depth_m) %>% 
+
+ggplot(aes(x = O2_uM, y = Depth_m)) +
+  geom_point() +
+  geom_path(aes(group = 1)) +
+  scale_y_reverse(lim=c(200,10)) +
+  theme_classic() +
+  #options(repr.plot.width=5, repr.plot.height=3) +
+  labs(y = "Depth (m)",
+       x = "Oxygen (uM)")
+```

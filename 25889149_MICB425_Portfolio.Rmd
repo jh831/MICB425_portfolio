@@ -1,0 +1,1034 @@
+---
+title: "MICB425 Portfolio - Microbial Ecological Genomics: From Genomes to Biomes, Spring 2018"
+author: "Jun Hui, Jenny, He, 25889149"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+---
+# Module 01
+
+## Module 01 portfolio check
+
+* Installation check
+    + Completion status:
+    + Comments:
+* Portfolio repo setup
+    + Completion status: 
+    + Comments:
+* RMarkdown Pretty html Challenge
+    + Completion status:
+    + Comments:
+* Evidence worksheet_01
+    + Completion status:
+    + Comments:
+* Evidence worksheet_02
+    + Completion status:
+    + Comments:
+* Evidence worksheet_03
+    + Completion status:
+    + Comments:
+* Problem Set_01
+    + Completion status:
+    + Comments:
+* Problem Set_02
+    + Completion status:
+    + Comments:
+* Writing assessment_01
+    + Completion status:
+    + Comments:
+* Additional Readings
+    + Completion status:
+    + Comments  
+    
+## Data science Friday  
+
+### Installation check
+Use this space to include your installation screenshots.
+
+![MacTerminal](MacTerminal.png)
+
+![GitHub](Fig4.GitHub.png)
+
+
+![RStudio](Fig3.RStudio.png)
+
+
+
+### Portfolio repo setup
+Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
+
+cd documents
+cd MICB425_portfolio
+git add .
+git status
+git commit -m "Attach Message"
+git push 
+git status
+
+
+### RMarkdown pretty html challenge
+Please see Pretty_html.Rmd or Pretty_html.html in the MICB425 portfolio 
+
+### ggplot Tutorial
+Please see Working_Data.Rmd or Working_Data.html in the MICB425 portfolio
+
+## Origins and Earth Systems
+### Evidence worksheet 01 
+
+[Whitman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
+#### Learning objectives
+Describe the numerical abundance of microbial life in relation to ecology and biogeochemistry of Earth systems. 
+
+#### Specific questions
+* What were the main questions being asked?  
+
+    - Where are the main prokaryote habitats located and what is the estimated abundance of prokaryotes in the different reservoires? 
+
+    - What is the total nutrient and carbon content present in prokaryotes and how do they affect the carbon cycle? 
+
+* What were the primary methodological approaches used?  
+
+The primary methodological approaches used were mainly based on the extrapolation of pooled sampling data. The number of prokayotes was estimated using the average cellular density multipled by the estimated volume of the respective reservoires (i.e. water quantities, soil amounts, and terrestrial subsurface volumes). The amount of cellular carbon content present in prokaryotes was estimated based on the assumption that the cellular carbon is one-half of the dry weight.   
+
+* Summarize the main results or findings.  
+
+The main prokaryotic reservoires are the oceans, soils, and terrestrial subsurfaces. The largest turnover rate of prokaryotes is in the oceans. The total amount of prokaryotic carbon is about 60% to 100%. Prokaryotes contribute the largest amount of phosphorous and nitrogen. The large population of prokaryotes imply that there is a greater chance of mutation, therefore contributing to the overall genetic diversity.  
+
+According to Table 5:   
+Summary of the number prokayotes in the world is:  
+    - Aquatic habitats: 12x10^28^  
+    - Oceanic subsurface: 355x10^28^  
+    - Soil: 26x10^28^  
+    - Terrestrial subsurface: 25-250x10^28^  
+    - Total: 415-640x10^28^  
+
+Summary of the amount (Pg) of carbon content in prokaryotes is:  
+    - Aquatic habitats: 2.2  
+    - Oceanic subsurface: 303  
+    - Soil: 26  
+    - Terrestrial subsurface: 22-215  
+    - Total: 353-546  
+
+* Do new questions arise from the results?  
+
+    - What is the significance of the estimated prokaytoic abundance in the different reservoires in relation to their metabolic potential to thrive in those enviroments?  
+    
+    - How can the calculations be used to predict future events?   
+
+* Were there any specific challenges or advantages in understanding the paper (*e.g.* did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+
+Overall, the authors assumed that the experimental approaches used were robust. However, the data presented in the paper were largely obtained via extrapolation, therefore, the values may not have been assessed appropriately. Although the results were impactful, the references provided were not scrutinized and so it raises concerns regarding the reliability of the calculations.  
+
+
+### Problem set 01
+[Whiteman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
+#### Learning objectives: 
+Describe the numerical abundance of microbial life in relation to the ecology and biogeochemistry of Earth systems.
+
+#### Specific questions:
+* What are the primary prokaryotic habitats on Earth and how do they vary with respect to their capacity to support life? Provide a breakdown of total cell abundance for each primary habitat from the tables provided in the text.  
+
+The primary prokaryotic habits and their respective cellular abundance are:  
+    - Aquatic habitat and open ocean: 1.2x10^29^    
+    - Soil: 2.6x10^29^    
+    - Oceanic and terrestrial subsurfaces: 3.8x10^30^    
+
+Due to the different nutrient availability and carbon content at the different habitats, the capacity to support life will vary. For example, with a higher amount of nutrent and carbon content, the number of cells will increase. 
+
+* What is the estimated prokaryotic cell abundance in the upper 200 m of the ocean and what fraction of this biomass is represented by marine cyanobacterium including Prochlorococcus? What is the significance of this ratio with respect to carbon cycling in the ocean and the atmospheric composition of the Earth?  
+
+The estimated prokaryotic cell abundance in the upper 200 m of the ocean is: 5x10^5^ cells/mL.
+
+The cellular density for Prochlorococcus is: 4x10^4^ cells/mL
+
+Fraction of biomass represented by marine cyanobacterium Prochlorococcus is: (4x10^4^ cells/mL)/(5x10^5^ cells/mL) = 0.08 = 8%
+
+Prochloroccous is a primary carbon carrier. Given only 8% of cells are supporting the trophic level, it implies that there must a high turnover rate to able to support the large biomass. 
+
+* What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?  
+
+Autotroph: uses inorganic carbon as a source of carbon (ie. CO2)  
+Heterotroph: uses organic carbon as a source of carbon (must be incorporated into their own cells)  
+Lithotroph: uses inorganic chemical as a source of electrons
+
+* Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?  
+
+The deepest habitat capable of supporting prokaryotic life is the Marianna's Trench located at 10.9km, with an additional 4.5km below sea level, therefore it is located 14.9km below sea level.The primary limiting factor at this depth is temperature because the average temperature at this depth is about 125°C, which nearly exceeds the upper limit for prokaryotic life. 
+
+
+* Based on information provided in the text your knowledge of geography what is the highest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this height?  
+
+The highest habitat capable of supporting prokaryotic life is Mount Everest, which is 8.8km above sea level. The primary limiting factor at this height would be nutrient availability and temperature. 
+
+
+* Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth’s biosphere measured in km?  
+
+Assuming Mount Everest is the upper boundary, and 4.9km below subsurface is the lower boundary, the vertical distance of Earth's biosphere is approximately 24km (from highest to lowest).  
+
+Calculation: 8.8 (Mount Everest) + 10.9km (Marianas Trench) + 4.9km = ~24.6km   
+
+-Marianna's Trench (lowest): ~10.9km (+/-4.5km)  
+-Mount Everest (highest): 8.8km  
+-Deepest subsurface: 9-10km from sea level  
+
+* How was annual cellular production of prokaryotes described in Table 7 column four determined? (Provide an example of the calculation)  
+
+Annual cellular production (cells/yr) = (population size) / (turnover days) * 365  
+= (3.6x10^28^) / (16) * 365   
+= 8.2x10^29^ cells/yr 
+
+* What is the relationship between carbon content, carbon assimilation efficiency and turnover rates in the upper 200m of the ocean? Why does this vary with depth in the ocean and between terrestrial and marine habitats?  
+
+Assumptions:  
+    - Carbon efficiency is 20%  
+    - There is 5-20 femtogram of C/prokaryotic cell  
+    - Average 10fg = ~20x10^-30^ pg/cell  
+
+Total number of cells: 3.6x10^28^ cells  
+
+(3.6x10^28^) * (20x10^-30^pg/cell) = 0.72 Pg in marine heterotrophs 
+
+Using a multiplier of 4 from the paper: 4 * 0.72 = 2.88 Pg/year (turnover rate of C)
+
+Given 51Pg C/year and 85% of which is consumed in photic water:  
+51 * 0.85= ~43Pg C consumed
+
+Therefore:  
+(43 Pg/year) / (2.88 Pg/year) = 14.9 or 1 turnover every 24.5 days
+
+
+* How were the frequency numbers for four simultaneous mutations in shared genes determined for marine heterotrophs and marine autotrophs given an average mutation rate of 4 x 10^-7^ per DNA replication? (Provide an example of the calculation with units. Hint: cell and generation cancel out)  
+
+4x10^-7^ mutations/generation  
+(4x10^-7^)^4^ = 2.56x10^-26^ mutations/generation  
+[4 simultaneous mutations in every gene, hence to the power of 4]
+
+3.6x10^28^ cells  
+(365 days) / (16 days-generation time) = 22.8 turnovers/year  
+
+(3.6x10^28^ cells) x 22.8 = 8.2x10^29^ cells/year in ocean   
+
+(8.2x10^29^ cells/year)*(2.56x10^-26^ mutations/generation)   
+= 2.1x10^4^ mutations/year  
+= 0.4 hours/mutation (in paper)
+
+Although it is rare to have 4 mutations simultaneously, this shows that this is still occurring frequently possibly due to point mutations. The whole other mobile aspect to microbial genome is that it is drastically more rapid than the mutation we calculated, which implies that with large enough population sizes anything is possible.  
+
+
+* Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?  
+
+The large population size and high mutation rate of prokaryotic cells imply there is an enormous potential to acquire genetic diversity. Point mutations are not the only way for microbial genomes to diversity and adapt because horizontal gene transfer also play s ahuge factor. Through horizontal gene transfer genetic material is exchanged between microbial species, and it may result in the uptake of virulence or resistence genes that may contribute to an increased surival or adapatibility. 
+
+* What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text? 
+
+A high prokaryotic abundance in conjunction to the high mutation rates contribute to the overall increase in microbial diversity. The increase microbial diversity will subsequently enhance species metabolic potential to respond to stressful conditions or perturbations.  
+
+### Evidence worksheet 02
+[Nisbet and Sleep 2001](http://www.ncbi.nlm.nih.gov/pubmed/11234022)
+
+#### Learning objectives: 
+Comment on the emergence of microbial life and the evolution of Earth systems. 
+
+####Specific Questions:
+
+* Indicate the key events in the evolution of Earth systems at tic marks on the time series.
+
+* Describe the dominant physical and chemical characteristics of Earth systems at waypoints.
+
+**4.6 Ga**  
+- Solar system was created: super nova resulted in planetismals  
+- Planets received water vapour and carbon  
+**4.5 Ga**  
+- Proto-Earth struck: formation of the moon  
+- Earth's spin and tilt, day and night cycles, and seasons were created  
+**4.4 Ga**  
+- Oldest mineral,Zircons, were discovered in Western Australia  
+**4.1 Ga**  
+- First evidence of life in carbon isotopes in Zircon, stored in graphite  
+**4.0 Ga**  
+- Acasta gneiss, silica rich rocks, were discovered in Western Canada  
+- Evidence for subduction activity  
+**3.8 Ga**  
+- Meteorite impacts contributed to ocean chemistry  
+- Sedimentary rocks, weathering, oceans heated, phosphorus   
+- Emergence of life from evidence of rocks in the Isua Belt containing the oldest water-lain sediment  
+- Meteorite bombardment halted   
+**3.5 Ga**  
+- Rubisco in carbon fractionation contributed to the global oxygenic photosynthesis, which increased the productivity of chemotrophic life  
+- Evolution of cyanobacteria was evident  
+- Evidence of microfossils and stromatolites  
+**3.2 Ga**  
+- Microfossils in volcanogenic massive sulphide deposits implied that life existed in mid-ocean ridges,therefore beginning to see a widespread of microbial life   
+- Carbonaceous microstructures  
+**3.0 Ga**  
+- First global glaciation induced by methanogens  
+**2.7 Ga**  
+- The great oxidation event responsible for Earth's glaciation   
+**2.3 Ga**  
+- Initial rise of atmospheric oxygen by cyanobacteria  
+**2.0 Ga**  
+- First Homo Sapien appeared  
+**1.8 Ga**  
+- Emergence of Eukaryotes  
+**1.0 Ga**  
+- Snowfall and glaciation triggered by a series of changes in surface chemistry  
+**0.5 Ma**  
+- Cambran explosion, which resulted in larger organisms and increased diversity  
+- Emergence of animals and explosion of cellular life   
+**0.4 Ma**  
+- Land plants which increased atmospheric oxygen levels   
+**0.25 Ma**   
+- Permian extinction, which resulted in the extinction of 95% of species   
+- Period of "gigantism" observed in animals  
+
+### Problem set 02
+[Falkowski *et al* 2008](http://www.sciencemag.org/content/320/5879/1034.abstract)
+
+#### Learning objectives: 
+Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles
+
+#### Specific questions:
+* What are the primary geophysical and biogeochemical processes that create and sustain conditions for life on Earth? How do abiotic versus biotic processes vary with respect to matter and energy transformation and how are they interconnected?
+
+The primary geophysical processes include:  
+    -tectonics and atmospheric photochemical processes which involve the cycling of substrates and products to form the geochemical cycles  
+    -geothermal processes, diagenesis, tectoics, erosion mountain building are also examples  
+    
+The primary biogeochemical processes include:   
+    -comprised of acid-base and redox reactions that allow the cycling and maintenance of major bioelements such as C, H, O, N, P, S   
+    -also maintains the flow of nutrients   
+    -volcano activity, rock weathering, and cellular respiration are examples of biogeochemical proceses    
+   
+Abiotic processes are mainly made up of acid-base chemistry, whereas biotic processes are mainly made up of of redox reactions. Both abiotic and biotic processes are interconnected in ways such that together they set the lower limits on external E required to sustain the cycles. 
+
+* Why is Earth's redox state considered an emergent property?
+
+The Earth's current redox state is reflective of the outcomes of the integrated microbial network interactions. Microbes play a role in catalyzing the thermodynamically constrained reactions present within biolgoical fluxes of major elements via coupled half-cells. Through this, a system of linked element cycling has been created. Geological processes such as tectonics also contribute to the replenishment of elements in the biological fluxes, together, these biogeochemical processes alter the Earth's redox state. The notion of Earth's redox state being considered as an emergent property implies that microbial units collectively come together to form an interconnected network of metabolic pathways that help create feedbacks links between metabolic and geochemical processes.
+
+* How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?    
+
+-via cycles of coupled oxidation and reduction reactions    
+-thermodynamics depends on which side of reaction is favoured   
+-products of one nutrient cycle can be funneled to use as the substrates for another nutrient cycle or create a new one, thereby giving rise to new elements nutrient cycles  
+-methanogens, for example, preferentially uses the unfavorable reverse reaction via symbiosis with H+ containing sulfate reducer because the forward reaction requires too high of a H+ concentration to reduce CO2  
+-other strategies involve using enzymes to catalyze reactions, such as nitrogenase  
+
+
+* Using information provided in the text, describe how the nitrogen cycle partitions between different redox "niches" and microbial groups. Is there a relationship between the nitrogen cycle and climate change?  
+
+-presence of +O2: ammonia is oxidized to nitrate and nitrite by different groups of nitrifying bacteria   
+-absence of -O2: nitrite and nitrate are used as electron acceptors to oxidize organic matter and to make nitrogen gas  
+-nitrate present in soil is taken up by plants to produce organic compounds through the process of nitrate assimilation  
+-this process will depend on the availability of various components: nitrate, nitrite, oxygen, and organic matter   
+-climate change will affect the amount of sunlight available for plants to use for photosynthesis, which in turn will affect the level of O2 and consequently the final steps in the nitrogen cycle that involve reducing nitrate and nitrite into nitrogen gas  
+
+
+* What is the relationship between microbial diversity and metabolic diversity and how does this relate to the discovery of new protein families from microbial community genomes?  
+
+-metabolic diversity: metabolic pathways using available substrates produced as end products of other types of microbial metabolism    
+-microbial diversity: horizontal gene transfer to uptake new genetic material  
+-the increase in microbial diversity is parallel to an increase in new genomes sequenced and numbers of new protein families    
+-this is because an increase in diversity will necessitate or introduce more metabolic pathways required to maintain survival   
+-consequently, new proteins are made to help species to thrive in the different environments  
+
+* On what basis do the authors consider microbes the guardians of metabolism? 
+
+Despite the different environmental conditions, microbes have acquired new genetic material through horizontal gene transfer which ultimately allowed them to withstand strong environmental perturbations. In midst of their microbial evolution, core genes coding for redox reactions that contribute to biogeocheical cycles are conserved.  In a sense, new environmental conditions select what microbes survive, but eseential  metabolic pathways are still protected and passed on overtime through the means of boutique genes. 
+
+
+### Evidence worksheet 03 
+[Rockstrom 2009](http://www.narcis.nl/publication/RecordID/oai:library.wur.nl:wurpubs%2F385190)
+
+#### Learning objectives: 
+Discuss the relationship between microbial community structure and metabolic diversity  
+Evaluate common methods for studying the diversity of microbial communities  
+Recognize basic design elements in metagenomic workflows  
+
+####Specific Questions:
+* What were the main questions being asked? 
+
+    - What are the main drivers of global environmental change?  
+
+    - How are the thresholds for sustaining the Earth-system processes, the planetary boundaries, defined? What are some of the presented limitations?  
+
+    - Human activities are a key trigger in exceeding these set thresholds, how far or close is society as a whole in transgressing these set boundaries? 
+
+* What were the primary methodological approaches used?    
+
+Proposed climate boundary is defined by two parameters:  
+1. atmospheric concentration of carbon dioxide    
+2. radiative forcing   
+
+Defining preconditions for human development:  
+1. impact of human actions in relation to the Earth sustaining capacity  
+2. understanding the essential Earth processes   
+3. understanding the thresholds and shifts between living systems   
+
+* Summarize the main results or findings.  
+
+Discovered nine processes required to define planetary boundaries:  
+1. climate change  
+2. rate of biodiversity loss  
+3. interference with the nitrogen and phosphorus cycles  
+4. stratospheric ozone depletion  
+5. ocean acidification  
+6. global fresh water use  
+7. change in land use  
+8. chemical polution  
+9. atmospheric aerosol loading   
+
+-soonly approaching the boundaries are: global freshwater use, change in land use, ocean acidification, and interference of the global phosphorous cycle  
+
+-already transgressed boundaries: climate change, rate of biodiversity loss, and interference with the nitrogen cycle   
+
+* Do new questions arise from the results?   
+
+-How do you mitigate a balance bewteen human acitivites and exceeding thresholds?  
+-To what extent can a loss of biodversity occur before the resilience of a community collapses?   
+    
+* Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?   
+
+The effects of the overlap of one boundary with another is not well understood yet. We are unable to provide a timeline in confidence to determine when dangerous environmental changes will exacerbate the Earth system or help return it to normal levels 
+
+
+###Prompt 1
+
+-  "Microbial life can easily live without us; we, however, cannot survive without the global catalysis and environmental transformations it provides." Do you agree or disagree with this statement? Answer the question using specific reference to your reading, discussions and content from evidence worksheets and problem sets."  
+
+From the creation of the solar system to the emergence of homo sapiens, microbes have served important roles in shaping the direction of evolution. As the pioneers of early Earth, microbes have altered biogeochemical transformations and created habitable environmental conditions for humans to live in. Throughout the 4.6 billion years of evolutionary changes, microbes displayed enormous adaptive potentials and strong resilience as reflected in their ability to survive different conditions. To date, given the sheer abundance of microbes, it simply makes them irreplaceable. Microbes collectively are an important entity for maintaining human survival. They are undoubtedly the key players in paving the path for human life. The interconnected microbial networks are also essential in restoring the balances between the different nutrient cycles. Waste management and environmental efforts are also dependent on the contribution by microbes. Despite the increases in technological advancements, ties to microbial transformations cannot be detached entirely.   
+
+Microbes are the pioneers in providing Earth with habitable conditions. Approximately 2.3 billion years ago, cyanobacteria were responsible for introducing oxygen into the atmosphere (4). Up until present day, the presence of all of the oxygen that we breathe is largely attributed to the works of microbes (4). Aside from the generation of oxygen, as the early pioneers microbes also contributed to the overall global atmospheric evolution. For example, Kasting states that the microbial population is responsible for the atmospheric evolution of inhabited planets (4). In the event of another global atmospheric change, microbial contribution cannot be excluded (4).  Especially in the consideration of potential habitation on Mars, microbes will certainly be necessary. If there continues to be an increase of habitat loss and overexploitation, it is plausible that Earth would be subjected into a “sixth mass extinction event” (5).  Another reason is microbes are required for the conservation of essential biogeochemical pathways. They are extremely robust and resilient, and relies on horizontal gene transfer that ultimately allows accessory genes to survive to conserve important metabolic pathways (6).  
+ 
+Microbial catalysis and functions are crucial for maintaining the balances between the different elemental cycles. For example, an active biosphere relies on nitrogen fixation to integrate nitrogen into biological molecules (2). On an industrial scale, the Haber Bosch process fulfills this need as it has been widely used to mass produce ammonia using nitrogen and hydrogen (2) . Despite it being one of the main anthropogenic inputs of fixed nitrogen, in the absence of any microbial catalysis the atmospheric reserves of nitrogen and hydrogen would presumably be depleted overtime. Consequently, nitrogen would be sequestered in deep sediments which would otherwise necessitate difficult deep sea engineering. On an environmental scale, plants would deplete fixed nitrogen and photosynthesis would eventually stop proceeding (3). However, the nitrogen cycle is restored by microbes because they permit the processes of denitrification and anammox to occur, thereby closing the loop by returning nitrogen gas into atmosphere (2). The restoration of balance is also necessary for the continuation of biogeochemical cycles.  
+
+Environmental and waste management efforts would be rendered futile in the absence of microbial catalysis. With respect to nutrient and biomass cycling, microbes are important in ensuring a continuous cycling of nutrients to prevent their exhaustion. In addition, they actively recycle biomass to avoid accumuation and adding onto the existing amount of biogeochemical waste (3). For example, phosphorus is a type of non-renewable biomass. The lack of regeneration of phosphorous can negatively affect ocean productivity and perturb the balances maintained between human inputs (3). Because phosphorous is deposited in deep sediments, it is extremely difficult to release the sequestered phosphorus in an environmentally sustainable way, and therefore again necessitating the activity of microbes (3). Environmental efforts are underway to combat the increasing levels of carbon dioxide and methane, both of which are greenhouse gases. The fact that “levels of carbon dioxide have grown at an extraordinarily rapid rate” and with methanes showing “similar rapid burst” reflect the increase in fossil fuel production and animal respiration (7). As an effort to remedy the effects of climate change, methods such as genetically modified organisms and geoengineering are being introduced (8).  
+
+With an increase in technological advancements, the prospects of replacing the work of microbes is still underway. The act of symbiosis, for example, is a prime example for showing why it is difficult to completely delineate associations from microbes. Symbiosis relationships may include but not limited to nutrient acquisition or production.  Since humans are largely composed of microbes, it is a rather contradictory thought to put forth about surviving without microbes when it is not possible for humans separate from their own entities. Also, the feasibility regarding to the time scale and resilience of technology are also factors that need to be taken into consideration. With reference to the evolutionary development of microbial metabolism, the ability for technology to replicate the same machineries following the same time scale remains uncertain. This thought is especially challenged by complications in technological systems as they are “vulnerable to rare but consequential failures” (8). In additional, knowledge regarding the details of how individual processes interact in complex biogeochemical cycles are not yet well understood (1). Based on this, it seems naive to consider replacing these cycles that produce massive amounts of nutrients with “machines” that are require further elucidation.  
+
+In conclusion, microbes adapt to environments that favour them and create habitable conditions to support life forms. Many of the different elemental cycles and fluxes are maintained due to the interconnected microbial network interactions. Efforts in environmental and waste management are also dependent on microbes to help in nutrient and biomass renewal. Despite an increase in the use of technology to replace microbial functions, doubts still arise with regards to the feasibility in time and resilience. Many of the biogeochemical processes still require further study to understand the individual processes involved, therefore, it is still a long path to replace microbial functions with technology confidently.  
+
+
+Reference  
+1. Falkowski, PG, Fenchel, T, Delong, EF. The Microbial Engines That Drive Earth's Biogeochemical Cycles. Science. *320*:1034-1039. doi: 10.1126/science.1153213.  
+2. Canfield, DE, Glazer, AN, Falkowski, PG. 2010. The Evolution and Future of Earth’s Nitrogen Cycle. Science. *330*:192. doi: 10.1126/science.1186120.  
+3. Gilbert, JA, Neufeld, JD. 2014. Life in a World without Microbes. PLOS Biology 12(12): e1002020.  
+4. Kasting, JF, Siefert, JL. 2002. Life and the Evolution of Earth's Atmosphere. Sci. *296*:1066-1068.  
+5. Waters, CN, Zalasiewicz, J, Summerhayes, C, Barnosky, AD, Poirier, C, Galuszka, A, Cearreta, A, Edgeworth, M, Ellis, EC, Ellis, M, Jeandel, C, Leinfelder, R, McNeill, JR, deB Richter, D. 2016. The Anthropocene is functionally and stratigraphically distinct from the Holocene. Science. 351:aad2622. doi: 10.1126/science.aad2622.  
+6. Nisbet, EG. 2001. The habitat and nature of early life. Nature. 409:1083-1091. doi: 10.1038/35059210.  
+7. Mooney, C. 2016. Scientists say humans have now brought on an entirely new geologic epoch. The Washington Post. .  
+8. Achenbach, J. Published: January, 2. Spaceship Earth: A new view of environmentalism. 
+
+
+### Module 01 References
+
+Whitman, WB, Coleman, DC, and Wiebe, WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578–6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
+Kasting, JF, Siefert, JL. 2002. Life and the Evolution of Earth's Atmosphere. Sci. *296*:1066-1068.
+
+Sleep, NH, Nisbet, EG. 2001. The habitat and nature of early life. Nature. 409:1083-1091. doi: 10.1038/35059210. http://www.ncbi.nlm.nih.gov/pubmed/11234022.
+
+Rockström, J, Steffen, W, Noone, K, Scheffer, M. 2009. A safe operating space for humanity. Nature. *461*:472-475. doi: 10.1038/461472a. http://www.narcis.nl/publication/RecordID/oai:library.wur.nl:wurpubs%2F385190.
+
+# Module 02
+## Remapping the Body of the World
+### Evidence worksheet 04
+[Martinez *et al* 2007](http://www.jstor.org/stable/25427240.) 
+
+#### Learning objectives
+Discuss the relationship between microbial community structure and metabolic diversity.  
+Evaluate common methods for studying the diversity of microbial communities.  
+Recognize basic design elements in metagenomic workflows.  
+
+####Specific Questions:
+* What were the main questions being asked?   
+
+-How are the structure and function of the proteorhodopsin (PR) system characterized?   
+-What are the genetic and biochemistry basis of the PR gene and how is it characterized using functional screens?  
+-How wide spread is the PR gene in the water column? What are the implications of this on organism's fitness advantage?  
+-How can we use heterologous expression system to identify minimal functional requirements to confer the same phenotypes for organisms that are not studied in culture?   
+
+* What were the primary methodological approaches used?    
+
+-a fosmid library obtained from marine picoplankton was screened for PR-expressing phenotypes by plating PR-containing clones on LB medium supplemented with retinal   
+-the full DNA sequence of two PR-containing fosmids was obtained from sequencing a collection of the transposon-insertion clones   
+-the function of the putative retinal biosynthetic genes was assessed using transposon mutatant phenotypes (insertional mutants), which contained an insertion in the predicted PR photosystem genes  
+-light-activated proton-translocating activity (i.e. changes in ATP levels) were detected using luciferase-based assay   
+-it was critical to use fosmid vectors that were induced to high copy numbers  
+
+* Summarize the main results or findings.   
+
+-the PR-associated retinal biosynthetic genes are necessary and sufficient for retinal biosynthesis in E. coli
+-PR functions were annotated without subcloning 
+-specific PR genes are necessary and sufficient to induce photophosphorylation in E. coli  
+-it was determined that six genes (five photopigment biosynthetic gene and one PR gene) are needed for light-ativated proton translocation and phosphorylation in a heterologous host  
+-DNA that was manipulated came from the environment and not from E. coli; however, they managed to screen for a phenotype in E.coli that is not normally expressed by them (heterologous host)    
+-the idi gene in the PR photosystem cluster was dispensible under the used experimental conditions   -the use of high fosmid vector numbers was important in increasing the levels of detectable recombinant gene expression 
+
+* Do new questions arise from the results?  
+
+-How can the described PR photosystem in E. coli apply to the PR in marine microorganisms that specialize in photoheterotrophy?  
+-If single lateral transfer events can lead to phototrophic phenotypes in organisms, what is the relationship between the prevalence of the photosystem and physiological impacts on organisms? How is it that all PRs characterized to date are only known to be light-activated ion pumps?  
+-although the use of large-insert libraries can capture more complete metabolic pathways, the low copy number can significantly decrease the sensitivity of detction in a heterologous host, which prompts questions regarding any alternative methods that can cater to both results at once   
+-also, it was stated that not all PR-containing clones in the libarry were detected  
+
+
+* Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?   
+
+-the conclusions stated were well supported by the presented results and relevant references   
+-explanations of the experiments are logical, and the PR insertional mutant analysis appears to be well conducted; however, it was mentioned that not all PR-containing clones were identified  
+
+### Problem set 03 
+#### Learning objectives: 
+Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.  
+
+#### Specific Questions:
+* How many prokaryotic divisions have been described and how many have no cultured representatives (microbial dark matter)?  
+
+2016:   
+  -89 bacterial phyla, 28 archael phyla: via small 16S rRNA databases  
+  -but could be up to 1500 bacterial phyla in the "shadow biosphere"
+
+2003:  
+  -26 of 52 major bacterial phyla have been cultured  
+
+* How many metagenome sequencing projects are currently available in the public domain and what types of environments are they sourced from?  
+
+There are:  
+  -110,000 on EBI database  
+  -many projects are available, constantly changing   
+  -most projects are not in public repositories, so the number is not entirely representative   
+  -MG-RAST provides a break down of projects based on different environments   
+
+* What types of on-line resources are available for warehousing and/or analyzing environmental sequence information (provide names, URLS and applications)?   
+
+MEGAN - http://www-ab.informatik.uni-tuebingen.de/software/megan   
+- it allows the analysis of large data sets  
+
+MG-RAST - https://metagenomics.anl.gov/  
+MG-RAST is an online system available to annotate and analyze metagenomic data.  
+
+ IMG/M - http://img.jgi.doe.gov/m  
+IMG/M allows individuals to integrate microbial genome and microbiome datasets and to run analysis computations. Datasets can be stored and accessed publicly or privately and can be revised anytime.
+
+METAVIR - http://metavir-meb.univ-bpclermont.fr/  
+METAVIR is another online server that is used to process and annotate viral metagenomes. The uploaded viral metagenomic data is compared against a set of dataset to determine sequence similarities.  
+
+NCBI - allows for search that feed into these different pipelines  
+
+Shotgun metagenomics:  
+Assembly - EULER  
+Binning - S-GCOM  
+Annotation - KEGG  
+Analysis pipelines - Megan5  
+
+Marker Gene Metagenomics:  
+OTUbase  
+SILVA - is the gold standard as it is high contrasting 
+Ribosomal Database Project (RDP)  
+
+* What is the difference between phylogenetic and functional gene anchors and how can they be used in metagenome analysis?  
+
+Phylogenetic gene anchors resolve evolutionary relations between organisms whereas functional gene anchors reveal diagnostic information about a pathway or metabolic process. The conserved sequences of phylogenetic gene anchors and functional gene anchors can be uploaded onto a metagenomic analyzer to compare sequence alignments against other microorganisms and subsequently aid in the construct of a phylogenetic tree. 
+
+* What is metagenomic sequence binning? What types of algorithmic approaches are used to produce sequence bins? What are some risks and opportunities associated with using sequence bins for metabolic reconstruction of uncultivated microorganisms?   
+
+Binning refers to the process of sorting DNA sequences into groups that might represent an individual genome or genomes from closely related organisms; can be based on GC contents 
+
+Issues:  
+  -incomplete coverage of genome, if reads don't cover every gene, then it is not entirely representative  
+  -sequence of different organisms may be too similar and overlap, i.e. can be in a bin that isn't supposed to be there  
+
+But, 90% of the time 5-10% contamination is acceptable
+
+* Is there an alternative to metagenomic shotgun sequencing that can be used to access the metabolic potential of uncultivated microorganisms? What are some risks and opportunities associated with this alternative?  
+
+Biochemical assays
+-used to determine whether things are metabolites and to assess their functions  
+
+Functional screens:FISH probes  
+-working with highly conserved enzymes and conserved sequenes
+-involves reassembling fragmented genomes   
+
+RT-qPCR   
+-higher sensitivity, can run multiple samples at the same time  
+-DNA extracted must be pure, and RNA can be unstable to work with
+
+Nanopore seqencing  
+-sequencing single ribosomes  
+-RNA modifications can complicate things; ribosomes may be attached to strongly; preparation for the library sequence may destroy the ribosome  
+
+3rd Generation sequencing  
+-can serve as an alternative option to shotgun sequencing  
+-avoids the shearing of DNA and can sequence longer fragments  
+-disadvantage is that it is not fully developed, and that it still incurs high errors and low full genome identification  
+
+
+
+### Module 02 References
+1. Martinez, A, Bradley, AS, Waldbauer, JR, Summons, RE, DeLong, EF. 2007. Proteorhodopsin Photosystem Gene Expression Enables Photophosphorylation in a Heterologous Host. Proceedings of the National Academy of Sciences of the United States of America. *104*:5590-5595. doi: 10.1073/pnas.0611470104. http://www.jstor.org/stable/25427240.
+
+
+
+# Module 03
+## Microbial Species Concepts
+### Problem set 04 
+#### Learning objectives: 
+
+* Gain experience estimating diversity within a hypothetical microbial community
+
+Part 1: Description and enumeration   
+-Candy count was obtained from Group 5  
+
+```{r}
+#To make tables
+library(kableExtra)
+library(knitr)
+#To manipulate and plot data
+library(tidyverse)
+```
+
+Sample data.
+```{r}
+example_data1 = data.frame(
+  number = c(1,2,3,4,5,6,7,8,9,10,11,12,13),
+  name = c("Twizzler", "OG Gummy", "Wine Gummy", "Sugar Gummy", "Sugar Swirls", "Sugar Bottles", "Octopi", "Mike-Ike", "Sphere Candy", "Skittles", "M&Ms", "Kisses", "Lego"),
+  characteristics = c("red string", "gummy bear", "wine gummy bear", "sugar gummy bear", "sugar coated swirls", "sugar coated bottle", "sugar coated octopi", "ovoid chewy", "spherical chewy", "flat hardshell chocolate", "bulky hardshell chocolate", "flat-bottom teardrop chocolate", "lego-like hard chewy"), 
+  occurences = c(7,16,1,2,1,1,4,25,6,26,41,1,1)
+)
+
+```
+
+Sample Data Table.
+```{r}
+example_data1 %>% 
+  kable("html") %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10, full_width = F)
+```
+
+Original Community Data. 
+```{r}
+OGcommunity_data1 = data.frame(
+  number = c(1,2,3,4,5,6,7,8,9,10,11,12,13),
+  name = c("Twizzler", "OG Gummy", "Wine Gummy", "Sugar Gummy", "Sugar Swirls", "Sugar Bottles", "Octopi", "Mike-Ike", "Sphere Candy", "Skittles", "M&Ms", "Kisses", "Lego"),
+  characteristics = c("red string", "gummy bear", "wine gummy bear", "sugar gummy bear", "sugar coated swirls", "sugar coated bottle", "sugar coated octopi", "ovoid chewy", "spherical chewy", "flat hardshell chocolate", "bulky hardshell chocolate", "flat-bottom teardrop chocolate", "lego-like hard chewy"), 
+  occurences = c(14,101,8,3,3,3,6,131,19,197,242,16,18)
+)
+```
+
+Original Community Data Table.
+```{r}
+OGcommunity_data1 %>% 
+  kable("html") %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10, full_width = F)
+```
+
+Part 2: Find and use an R function to calculate and plot a collector's curve from the total community Table 1 (also called a rarefaction curve, hint: look into the `vegan` package). As you will need to learn new R functions for this, you can recover full marks for this portion.
+
+
+
+```{r}
+names <- OGcommunity_data1$name
+newdata <- as.data.frame(t(OGcommunity_data1))
+newtable1 <- newdata[c(2,4),c(1:13)]
+colnames(newtable1) <- names
+newtable1 <- newtable1[2,]
+
+newtable2 <- data.frame(
+  Twizzler=14,
+  OG_Gummy=101,
+  Wine_Gummy=8,
+  Sugar_Gummy=3,
+  Sugar_Swirls=3,
+  Sugar_Bottles=3,
+  Octopi=6,
+  Mike_Ike=131,
+  Sphere_Candy=19,
+  Skittles=197,
+  MMs=242,
+  Kisses=16,
+  Lego=18
+)
+
+library(vegan)
+rarecurve(newtable2, step = 13, xlab = "Cumulative Number of Species Observed", ylab = "Cumulative Number of Individuals Classified",
+          label = TRUE)
+
+```   
+
+Does the curve flatten out? If so, after how many individual cells have been collected?  
+-Yes, the curve does flatten out after approximately 500 individual cells have been collected.  
+
+What can you conclude from the shape of your collector’s curve as to your depth of sampling?  
+-Since the slope of the curve eventually reaches zero, it indicates that the sampling is adequate.   
+
+Parts 3 and 4: Use code from the attached R script to randomly subsample Table 1 to 100 candies. Use this subsampled data and the Table 1 data to calculate reciprocal Shannon's and Chao1 by hand and with R functions as described in the problem set. Full marks possible.
+
+```{r}
+# Load packages
+library(tidyverse)
+library(phyloseq)
+
+# Load your data
+# Name your data table "Table1" or modify the following code to use your data table's name 
+
+# Modify Table 1 to be a community matrix, i.e. samples as rows (you will only have 1), "species" as columns, and the encompassed data as counts of those "species" in the sample
+community = example_data1 %>% 
+  select(name, occurences) %>%
+  spread(name, occurences) %>% 
+  otu_table(taxa_are_rows = FALSE) 
+
+# Create a random subsample (rarefy) the data to 100 observations
+subsample = as.data.frame(rarefy_even_depth(community, sample.size=100, replace=FALSE, rngseed=762))
+
+# Create a table for subsample
+subsample %>% 
+  kable("html") %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10, full_width = F)
+
+
+# Repeat for original community
+community_2 = OGcommunity_data1 %>% 
+  select(name, occurences) %>% 
+  spread(name, occurences) %>% 
+  otu_table(taxa_are_rows = FALSE) 
+
+subsample_OG = as.data.frame(rarefy_even_depth(community_2, sample.size=100, replace=FALSE, rngseed=762))
+
+subsample_OG %>%
+  kable("html") %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10, full_width = F)
+
+```
+
+Diversity: Simpson Reciprocal Index
+$\frac{1}{D}$ where $D = \sum p_i^2$
+$p_i$ = the fractional abundance of the $i^{th}$ species
+
+```{r}
+#Subsampled Data (only 12 variables):
+sa_species1 = 1/(100)
+sa_species2 = 1/(100)
+sa_species3 = 31/(100)
+sa_species4 = 19/(100)
+sa_species5 = 4/(100)
+sa_species6 = 9/(100)
+sa_species7 = 22/(100)
+sa_species8 = 4/(100)
+sa_species9 = 1/(100)
+sa_species10 = 1/(100)
+sa_species11 = 1/(100)
+sa_species12 = 6/(100)
+
+1 / (sa_species1^2 + sa_species2^2 + sa_species3^2 + sa_species4^2 + sa_species5^2 + sa_species6^2 + sa_species7^2 + sa_species8^2 + sa_species9^2 + sa_species10^2 + sa_species11^2 + sa_species12^2)
+
+#Subsampled OG Community Data:
+sa_cspecies1 = 5/(100)
+sa_cspecies2 = 4/(100)
+sa_cspecies3 = 39/(100)
+sa_cspecies4 = 16/(100)
+sa_cspecies5 = 1/(100)
+sa_cspecies6 = 20/(100)
+sa_cspecies7 = 2/(100)
+sa_cspecies8 = 2/(100)
+sa_cspecies9 = 2/(100)
+sa_cspecies10 = 1/(100)
+
+1 / (sa_cspecies1^2 + sa_cspecies2^2 + sa_cspecies3^2 + sa_cspecies4^2 + sa_cspecies5^2 + sa_cspecies6^2 + sa_cspecies7^2 + sa_cspecies8^2 + sa_cspecies9^2 + sa_cspecies10^2)
+
+#Sample Community: 
+species1 = 7/(7+16+1+2+1+1+4+25+6+26+41+1+1)
+species2 = 16/(132)
+species3 = 1/(132)
+species4 = 2/(132)
+species5 = 1/(132)
+species6 = 1/(132)
+species7 = 4/(132)
+species8 = 25/(132)
+species9 = 6/(132)
+species10 = 26/(132)
+species11 = 41/(132)
+species12 = 1/(132)
+species13 = 1/(132)
+
+1 / (species1^2 + species2^2 + species3^2 + species4^2 + species5^2 + species6^2 + species7^2 + species8^2 + species9^2 + species10^2 + species11^2 + species12^2 + species13^2)
+
+#Original Total Community: 
+cspecies1 = 14/(761)
+cspecies2 = 101/(761)
+cspecies3 = 8/(761)
+cspecies4 = 3/(761)
+cspecies5 = 3/(761)
+cspecies6 = 3/(761)
+cspecies7 = 6/(761)
+cspecies8 = 131/(761)
+cspecies9 = 19/(761)
+cspecies10 = 197/(761)
+cspecies11 = 214/(761)
+cspecies12 = 16/(761)
+cspecies13 = 18/(761)
+
+1 / (cspecies1^2 + cspecies2^2 + cspecies3^2 + cspecies4^2 + cspecies5^2 + cspecies6^2 + cspecies7^2 + cspecies8^2 + cspecies9^2 + cspecies10^2 + cspecies11^2 + cspecies12^2 + cspecies13^2)
+
+
+#Then we can calculate the Simpson Reciprocal Index using the `diversity` function.
+#Own sample community
+
+#Sample community
+example_data1_diversity = 
+  example_data1 %>% 
+  select(name, occurences) %>% 
+  spread(name, occurences)
+diversity(example_data1_diversity, index="invsimpson")
+
+#Subsampled data
+diversity(subsample, index="invsimpson")
+
+diversity(subsample_OG, index="invsimpson")  
+
+#Original total community
+OGcommunity_data1_diversity =
+  OGcommunity_data1 %>%
+  select(name, occurences) %>% 
+  spread(name, occurences)
+diversity(OGcommunity_data1_diversity, index="invsimpson")
+
+```
+
+
+* What is the Simpson Reciprocal Index for your sample, original total community, and subsampled data by hand?
+
+Sample: 5.204301  
+Original community:5.114509  
+Subsampled data: 5.102041  
+Subsampled OG data: 4.480287  
+
+* What are the Simpson Reciprocal Indices for your sample, original total community, and subsampled data using the R function?
+Sample: 5.204301  
+Original community: 4.596235  
+Subsampled data: 5.102041  
+Subsampled OG data: 4.295533  
+
+Richness: Chao1 richness estimator
+Another way to calculate diversity is to estimate the number of species that are present in a sample based on the empirical data to give an upper boundary of the richness of a sample. Here, we use the Chao1 richness estimator. 
+
+$S_{chao1} = S_{obs} + \frac{a^2}{2b})$
+
+$S_{obs}$ = total number of species observed
+a = species observed once
+b = species observed twice or more
+
+So for our previous example community of 3 species with 2, 4, and 1 individuals each, $S_{chao1}$ =
+
+Sample
+```{r}
+13 + 5^2/(2*8)
+```
+
+Original total community
+```{r}
+13 + 0^2/(2*13)
+```
+Subsampled data
+```{r}
+12 + 5^2/(2*8)
+```
+Subsampled OG data
+```{r}
+10 + 2^2/(2*8)
+```
+And we can calculate the Chao1 richness estimator (and others by default) with the the `specpool` function for extrapolated species richness. This function rounds to the nearest whole number so the value will be slightly different that what you've calculated above.
+
+```{r}
+specpool(example_data1_diversity)
+specpool(OGcommunity_data1_diversity)
+specpool(subsample)
+specpool(subsample_OG)
+``` 
+
+* What is the chao1 estimate for your sample, original total community, and subsampled data by hand?  
+sample:14.5625  
+original total community:13  
+subsampled data:13.5625  
+subsampled OG community data: 10.25  
+
+* What are the chao1 estimates for your sample, community, and subsampled data using the R function?
+    + Verify that these values match your previous calculations.
+    
+Sample:   
+    Species chao chao.se jack1 jack1.se jack2 boot boot.se n    
+All      13   13       0    13        0    13   13       0 1
+
+Community:  
+    Species chao chao.se jack1 jack1.se jack2 boot boot.se n    
+All      13   13       0    13        0    13   13       0 1 
+
+Subsampled data:  
+    Species chao chao.se jack1 jack1.se jack2 boot boot.se n    
+All      12   12       0    12        0    12   12       0 1   
+
+Subsampled OG community data:
+    Species chao chao.se jack1 jack1.se jack2 boot boot.se n    
+All      10   10       0    10        0    10   10       0 1 
+
+Part 5: Complete as normal. Full marks possible
+If you are stuck on some of these final questions, reading the [Kunin et al. 2010](https://www.ncbi.nlm.nih.gov/pubmed/19725865) and [Lundin et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/23760801) papers may provide helpful insights. 
+
+* How does the measure of diversity depend on the definition of species in your samples?
+
+When a greater number of common factors are taken into consideration when defining species in the sample, it will increase the number of species present. As a result, with an increase in the number of species, the measure of diversity will increase accordingly 
+
+* Can you think of alternative ways to cluster or bin your data that might change the observed number of species?
+
+Alternative way to cluster the data is to organize the candy by colours and size. This will increase the number of species that are defined. 
+
+* How might different sequencing technologies influence observed diversity in a sample?
+
+Some technology may contain a broader range with respect to sequence alignment so it would allow a greater number of species to be defined as opposed to one that has a more narrow range.  
+
+Other factors that can affect the outcome of the values:   
+-whether the most updated/curated database is used  
+-filtering out errors, stringent data control  
+-universal gene amplification (16S rRNA)  
+-different regions of amplification, possible primer bias  
+-consistencies in DNA preparation for sequencing  
+-consistent with species definition (i.e. 97% Seq, 100% ASV)  
+
+
+### Evidence worksheet 05 
+[Welch *et al* 2002](http://www.jstor.org/stable/3074056)
+
+#### Learning objectives (Part I): 
+Evaluate the concept of microbial species based on environmental surveys and
+cultivation studies.  
+
+Explain the relationship between microdiversity, genomic diversity and metabolic
+potential.  
+
+Comment on the forces mediating divergence and cohesion in natural microbial
+communities.  
+
+
+####Specific  Questions:
+* What were the main questions being asked?  
+
+    - How do the three different pathogenic E. coli strains (2 pathogenic, 1 non-pathogenic) differ from each other in genome composition and how do they contribute to the pathogenesis of intestinal diseases?  
+
+    - How does lateral gene transfer contribute to the emergence of new uropathogenic E. coli strains and the characteristic of lifestyle and disease-causing traits?   
+
+* What were the primary methodological approaches used?  
+
+The approaches used were:  
+-the whole-genome libraries were prepared with pBluescript and M13Janus  
+-sequence data were assembled using SEQMANII  
+-genome sequence was annotated using MAGPIE and ORFS were defined using GLIMMER     
+-potential protein sequences were searched against the nr/nt database using BLAST     
+-shot gun library sequence and PCR   
+-a 90% identity match of CFT073 in MG1655 or EDL933 was employed; any non-matches were used to predict orthology  
+
+* Summarize the main results or findings.  
+
+-New genes are introduced into E. coli by lateral gene transfer to separate the different lineages   
+-backbone is evolutionarily conserved through vertical gene transfer   
+-differences lie in the different pathogenicity islands (PAI)
+-there was selective pressure to conserve the PAI in infection and host colonization 
+-some locations for insertion of infectious genes are conserved, though it does not include the specificity to genes   
+-the circular CFT073 genome contains 5 million-bp chromosomal sequence   
+
+* Do new questions arise from the results?  
+
+-How similar/different are these three pathogenic strains from other pathogens?  
+-How do you define species given such a fine line separation of the different strains?  
+-How can species be defined to account for frequent gain and loss of accessory genes?
+-What are some alternatives to defining species given that phenotypic analysis and low resolution mapping alone are insufficient?  
+
+-need ways to assess the deletion of genes that are detrimental to the uropathogenic lifestyle:  
+perhaps selective pressure to conserve pathogenic associated islands  
+-core gene sets vs accessory gene sets associated with each strain  
+
+
+* Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)? 
+
+-Require prior knowledge in understanding the genetics    
+-Assumption that readers have a rich knowledge in the overall E. coli genome    
+-Overall the points were delivered clearly   
+
+#### Learning objectives (Part II):
+Comment on the creative tension between gene loss, duplication and acquisition as it
+relates to microbial genome evolution  
+
+Identify common molecular signatures used to infer genomic identity and cohesion  
+
+Differentiate between mobile elements and different modes of gene transfer  
+
+* Based on your reading and discussion notes, explain the meaning and content of the following figure derived from the comparative genomic analysis of three E. coli genomes by Welch et al. Remember that CFT073 is a uropathogenic strain and that EDL933 is an enterohemorrhagic strain. Explain how this study relates to your understanding of ecotype diversity. Provide a definition of ecotype in the context of the human body. Explain why certain subsets of genes in CFT073 provide adaptive traits under your ecological model and speculate on their mode of vertical descent or gene transfer.
+
+-according to the figure, both the CFT073 and EDL933 strains have pathogenicity islands with similar locations, although the specificity of the genes (PAI contents) are different (locations are conserved, but specificity of the genes is not)  
+-ecotype can be explained in the context of a niche  
+-it may be made up of populations that show cohesiveness in genetic components, but on an ecological basis they are different (i.e. genetic and environmental factors can influence the colonization in the different parts of the body)  
+-relating to the context of the paper, the different pathogenicity islands present in each of the two strains help to highlight differences between them despite sharing a common genetic backbone   
+-pathogenesis of CFT073: possibly that within the urinary tract environment, certain selective pressures are exerted to conserve the associated pathogenic genes, which therefore allowing infection to occur   
+-because of the selective pressure, the select sets of pathogenic genes allow CFT073 strain to thrive in the environment, and consequently the chances of these genes being passed on are increased  
+
+
+Notes:  
+Ecotype: is this a different word for niche?  
+
+Why is it difficult to define a microbial species?  
+- genetically similar, but adapted to different environments  
+
+Across the three different E. coli strains, they are only 39.2% in common [functional property], is this still species?  
+- shared backbone (core) [change via gene transfer / drift]    
+- process of gene transfer changes the process through genomic islands   
+ - genomic islands represent intersections and unique parts of venn diagram  
+--> typically are "Adaptive traits"   
+- genomic islands --> fitness, which leads to selection --> environment + host --> pathogenesis 
+- environment + host --> ecotype as well  
+- selecting a specific sets of genes to define what it means to be a microbial species   
+ 
+
+###Prompt 2
+
+- “Discuss the challenges involved in defining a microbial species and how HGT complicates matters, especially in the context of the evolution and phylogenetic distribution of microbial metabolic pathways.  Can you comment on how HGT influences the maintenance of global biogeochemical cycles through time?  Finally, do you think it is necessary to have a clear definition of a microbial species?  Why or why not?”  
+
+
+*The Blurred Boundaries of Microbial Species Definition*
+ 
+The defining of a microbial species is not a transparent process. It is confounded by many variables as a result of years of evolutionary changes. One of the ongoing challenges is finding a suitable trait to distinctly separate similarities and differences while taking into account the multitude of established species concepts.  Another problem lies in the fact that theoretical considerations are outweighed by the benefits of pragmatic approaches. This raises questions regarding to the limitations of current methods used to identify a species and the adequacy of each approach in response to the increasing species diversity. Another significant barrier to delineating species is the concept of horizontal gene transfer. Bacteria use various modes of horizontal gene transfer to exchange genetic material, and consequently this may lead to the uptake of virulence genes or merging of different species. Through the process of horizontal gene transfer, many important biogeochemical processes are maintained because the collection of core genes essential for life are conserved by microbes (1). The defining of a species is an ongoing process, and it will unlikely ever be constructed around a single set of standards only.   
+ 
+The definition of a species is a human construction. It is polyphasic in nature, meaning that it integrates both phenotypic and genotypic criterias (2). Ideally, to define a microbial species, a trait that is shared between all members of the species is selected. However, this appears to be complicated by many factors. Over the years, taxonomists have developed species concepts, which act as a framework for grouping organisms into species (2). Examples of species concepts include phenetic species concept, genotypic clustering concept, and phylogenetic species concepts, which all focus on a set of sharable traits (3). The advantage to using these is that it is applicable to all species. However, bacteria often undergo a “continuous spectrum of genotypic variation”, which makes it increasingly difficult to choose a suitable trait to delineate similarities and differences (2). Another factor is associated with the use of core genes, such as rRNA genes, as molecular markers to help identify species.  Although rRNA gene may serve as a useful trait given that it is less prone to the effects of horizontal gene transfer, many other important genes that help to differentiate strains are inevitably ignored (2). For instance, Grever et al. stated that important phenotypes may not be encoded on a stable chromosome, and therefore it can falsify any significant differences (2).   
+ 
+Another challenge present in the defining of a microbial species lies in the limitations of the methods used. Examples of some commonly used approaches to identify species are DNA-DNA hybridization (DDH) and multilocus sequence analysis (MLSA). The DNA-DNA hybridization defines species based on a 70% nucleotide sequence similarity, while MLSA is a multi-gene sequencing approach (4). Contrary to the polyphasic approach, which is more theory-based using phenotypic and genomic determinants, the DNA-DNA hybridization approach is often criticized for the arbitrary determination of the cut off value. The value was set based on the premise that already separated species share less than 70% nucleotide sequence identity (4). This prompts questions regarding to the validity of this rule, and may necessitate for more conventional approaches that provide more theoretical outputs. However, the fact that this rule has been in use for a long time shows the operational nature of microbial species demarcation (4). Schliefer stated that MLSA is proposed to replace the DDH method, given that by comparing the sequences of multiple genes, it gives more information about nucleotide sites and buffers against any biased recombination (5). However, pitfalls to this is that the sets of chosen genes still needs to be systematically tested and primers may not be available for the selected genes in the different strains (5).   
+ 
+Most prokaryotes are asexually reproducing organisms and acquire new genetic material through horizontal gene transfer (HGT). Mechanisms of HGT include transformation, transduction, conjugation, and GTA-associated horizontal gene transfer (6). With the ease of DNA exchange between bacterial species, the defining of species becomes increasingly difficult. This is because during the transfer of DNA, bacteria can acquire new genes that confer resistance or virulence. An example of this includes the uptake of a pathogenicity-associated island gene that allowed E. coli strain CFT073 to cause urinary tract infections in addition to maintaining its ability to colonize the intestine (7). Another challenge posed by HGT is that it can merge two different species through an ecological time scale and further blur the boundary between distinct species. For example, two distinct species Campylobacter jejuni and C. coli have been reported to engage in high levels of interspecies HGT which which caused them to eventually become indistinguishable (8). Despite the emergence of new species, the identification may also be complicated by the issue of cultivability and the success in isolating the new species genotypes.   
+ 
+HGT also impacts the maintenance of biogeochemical cycles. One of the pronounced effects of HGT is an increase in microbial diversity. Through the transfer of genetic material, species may uptake genes that allow them to withstand strong environmental perturbations which give them a fitness advantage. Over time, those with a higher adaptive potential will thrive and new populations of species could emerge. The increase in microbial diversity can affect the way that nutrients are cycled because of new biomass products that can be funneled into different cycles as substrates. More importantly, HGT also plays a critical role in maintaining essential redox reactions (1). Falkowski stated that microbes through horizontal gene transfer have enabled the conservation of a set of core genes necessary for redox reactions to sustain life (1). Important metabolic pathways are therefore protected and continued to get passed on. The various microbial species collectively form an interconnected network of metabolic pathways that maintain feedback links between metabolic and geochemical processes. Overall, the increase in microbial diversity has also greatly increased metabolic diversity.   
+ 
+With the ever changing microbial diversity, the defining of a microbial species will be a work in progress for a long time. Currently, it is not urgent to establish a clear cut definition because only about one tenth of prokaryotes have been cultured to date, which means there is still a large population of prokaryotes waiting to be discovered. The standards for defining a microbial species will continuously change in parallel with the discovery of new species. Instead of focusing on outputting a clear definition, I think it is more reliable to further refine the already established methods of identifying species as they currently seem to serve as a sufficient system to classify species. However, it is also key to avoid drastic changes so taxonomists can continue to communicate and exchange knowledge in this field using the same technical language.   
+ 
+With the enormous potential for microbial diversity, it will be a long path until a clear definition for a microbial species can be established. The frequency of bacterial genotypic variation makes it difficult to choose a trait that separates similarities and differences with absoluteness. The attempt to using rRNA as a molecular determinant to delineate species is becoming increasingly popular, but other important genes that highlight significant differences among different species are unavoidably ignored. This proceeds to show that there will always be limitations for every approach that is used, but sometimes the concept of practicality may fill in for what lacks in a theoretical approach. Undoubtedly, HGT will continue to allow bacteria to transfer genomic content and give rise to new species. HGT also helps to reinforce the presence of many important biogeochemical pathways by conserving sets of stable core genes in addition to expanding the microbial network. Many of the nutrient cycles are affected by this process and as a result of these changes metabolic diversity is enhanced. There are many factors that need to be taken into account for defining a microbial species, but perhaps resolving any one of the factors may not be sufficient to help achieve a more distinct boundary for microbial species definition.   
+ 
+Reference    
+ 
+1. Falkowski, PG, Fenchel, T, Delong, EF. 2008. The Microbial Engines That Drive Earth's Biogeochemical Cycles. Sci. *320*:1034-1039. doi: 10.1126/science.1153213.   
+2. Gevers, D, Cohan, FM, Lawrence, JG, Spratt, BG, Coenye, T, Feil, EJ, Stackebrandt, E, Van de Peer, Yves, Vandamme, P, Thompson, FL, Swings, J. 2005. Re-evaluating prokaryotic species. Nat. *3*:733-739.   
+3. Boggs, CL. 2001. Species and speciation. International Encyclopedia of the Social and Behavioral Sciences.   
+4. Konstantinidis, K, Kolter, R. 2013. Do bacterial species really exist and why should we care?http://schaechter.asmblog.org/schaechter/2017/01/do-bacterial-species-really-exist-and-why-should-we-care.html.  
+5. Schleifer, KH. 2009. Classification of Bacteria and Archaea: Past, present and future. Syst. Appl. Microbi. *32*:533-542. doi: 10.1016/j.syapm.2009.09.002.   
+6. Brimacombe, CA, Ding, H, Johnson, JA, Beatty, JT. 2015. Homologues of Genetic Transformation DNA Import Genes Are Required for Rhodobacter capsulatus Gene Transfer Agent Recipient Capability Regulated by the Response Regulator CtrA. J. Bacteriol. *197*:2653-2663. doi: 10.1128/JB.00332-15.  
+7. Welch, RA, Burland,V, Plunkett, G, Redford, P, Roesch, P, Rasko, D, Buckles, EL, Liou, SR, Boutin, A, Hackett, J, Stroud, D, Mayhew, GF, Rose, DJ, Zhou, S, Schwartz, DC, Perna, NT, Mobley, HLT, Donnenberg, MS, Blattner, FR. 2002. Extensive Mosaic Structure Revealed by the Complete Genome Sequence of Uropathogenic Escherichia coli. Proc. Natl. Acad. Sci. U.S.A. *99*:17020-17024. doi: 10.1073/pnas.252529799.   
+8. Caro-Quintero, A, Rodriguez-Castaño,GP, Konstantinidis, KT. 2009. Genomic Insights into the Convergence and Pathogenicity Factors of Campylobacter jejuni and Campylobacter coli Species. J. Bacteriol. *191*:5824. doi: 10.1128/JB.00519-09.   
+
+###Project 1
+See Project1_Group7.html in MICB425_portfolio. 
+
+###Module 3 References
+1. Welch, RA, Burland,V, Plunkett, G, Redford, P, Roesch, P, Rasko, D, Buckles, EL, Liou, SR, Boutin, A, Hackett, J, Stroud, D, Mayhew, GF, Rose, DJ, Zhou, S, Schwartz, DC, Perna, NT, Mobley, HLT, Donnenberg, MS, Blattner, FR. 2002. Extensive Mosaic Structure Revealed by the Complete Genome Sequence of Uropathogenic Escherichia coli. Proc. Natl. Acad. Sci. U.S.A. *99*:17020-17024. doi: 10.1073/pnas.252529799.   
+
+#Module 04
+##Distributed Metabolic Networks  
+###Project 2
+See Project2_Group7.html in MICB425_portfolio. 
+

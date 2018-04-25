@@ -1,0 +1,53 @@
+---
+title: "Project self-assessment of contributions"
+subtitle: "2018 Term 2 - MICB425"
+output: html_document
+---
+To facilitate group assessment, please indicate your contributions to the following aspects of your final group reports. You should provide short statements under the headers relevant to your work. For example, you could specify that you "wrote the first draft", "wrote the code to accomplish X figure or result", "troubleshot code", "interpreted results", etc.
+
+Include **separate** completed versions of this document for Project 1 **and** Project 2 in your portfolio repo; they do not need to be incorporated into the final knit portfolio html.
+
+## Abstract
+### Writing
+
+### Editing
+
+
+## Introduction
+### Literature research
+
+### Writing
+
+### Editing
+
+
+## Methods
+### Writing
+
+### Editing
+
+
+## Results
+### Anaysis 
+-I analyzed all of the TreeSAP figures in great details and wrote down notes for constructing paragraphs later
+
+### Figures
+-I renamed all of DNA and RNA files to make it easier to upload onto iTOL and for members to access and use
+-I made all of the tree figures for both DNA and RNA
+
+### Writing
+-From my analysis of both the TreeSAP figures and Rmd figures I answered all of the questions for the results section 
+
+### Editing
+-After finishing up the writing I went back to review the entire section to make modifications accordingly
+
+
+## Discussion
+### Literature research
+-I provided some useful articles for constructing the discussion 
+
+### Writing
+-I wrote the future directions part of discussion
+
+### Editing
+-After the rough outline of the discussion is finished I went back to check on the grammar and made appropriate changes 
